@@ -32,7 +32,7 @@
                 <li><a href="index.php?ruta=index" title="" class="active">Home</a></li>
                 <li><a href="index.php?ruta=about" title="">Nuestros Servicios</a></li>
                 <li><a href="index.php?ruta=components" title="">Educación Web</a></li>
-                <li class="enable"><a href="index.php?ruta=contact" title="">Contactos</a></li>
+                <li class=""><a href="index.php?ruta=contact" title="">Contactos</a></li>
                 <li class="enable">
                     <a href="index.php?ruta=pricing" title=""> Pricing </a>
                 </li>
