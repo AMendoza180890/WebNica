@@ -7,7 +7,8 @@ class contaC{
             
             $tablaBD = 'catclientcontacto';
 
-            $respuesta = ContactoM::contactIngresoM($datosC, $tablaBD);
+            $contactM = new ContactoM();
+            $respuesta = $this->$contactM->contactIngresoM($datosC, $tablaBD);
             
             if($respuesta == 'bien'){
                 echo "mensaje enviado";
@@ -15,7 +16,7 @@ class contaC{
                 header("location:index.php?ruta=contact");
                 */
             }else{
-               echo "error, mensaje no enviado"; 
+               echo $respuesta; 
             }
         }
     }

@@ -14,7 +14,7 @@ class ConexionBD{
         /*$this->charset =   'localhost';*/
     }
 
-    static public function cBD(){
+    public function cBD(){
         try{
             $bd = new PDO("mysql:host=".$this->host.";dbname=".$this->db,$this->user,$this->passw);
 
