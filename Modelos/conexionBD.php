@@ -1,27 +1,28 @@
 <?php
 class ConexionBD{
-    private $host;
-    private $db;
-    private $user;
-    private $passw;
-    /*private $charset;*/
+            private $host;
+            private $db;
+            private $user;
+            private $passw;
 
-    public  function _construct(){
-        $this->host =   $_SERVER;
-        $this->db =   'dbwebnica';
-        $this->user =   'root';
-        $this->passw =   '';
-        /*$this->charset =   'localhost';*/
+    public function __construct()
+    {
+        $this->host     =   $_SERVER['SERVER_NAME'];
+        $this->db       =   "dbwebnica";
+        $this->user     =   "root";
+        $this->passw    =   "";
     }
-
-    public static function cBD(){
+            
+    public  function cBD(){
         try{
-            $bd = new PDO("mysql:host=localhost;dbname=dbwebnica", 'root', '');
-            /*$bd = new PDO("mysql:host=".$this->host.";dbname=".$this->db , $this->user, $this->passw);*/
+            $conexion = "mysql:host=". $this->host.";dbname=". $this->db;
+
+            $bd = new PDO($conexion, $this->user, $this->passw);
+            
             return $bd;    
         }
         catch (PDOException $ex){
-            echo "Error en la conexion: ".$ex->getMessage();
+            echo "Error en la conexion: ". $ex;
         }    
     }
 }

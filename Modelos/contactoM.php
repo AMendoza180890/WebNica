@@ -5,13 +5,14 @@
 
            static public function contactIngresoM($datosC, $tablaBD){
                 try {
-                    $pdo = ConexionBD::cBD()->prepare("INSERT INTO $tablaBD (CatCliContName,CatCliContEmail,CatCliContAdress,CatCliContMessage)  
+                    $conec = new ConexionBD;
+                    $pdo = $conec-> cBD()->prepare("INSERT INTO $tablaBD (CatCliContName,CatCliContEmail,CatCliContAdress,CatCliContMessage)  
                         VALUES (:nombre, :email, :direccion, :mensaje)");
 
-                    $pdo -> bindParam(":nombre", $datosC["nomb"], PDO::PARAM_STR);
-                    $pdo->bindParam(":email", $datosC["correo"], PDO::PARAM_STR);
-                    $pdo->bindParam(":direccion", $datosC["direct"], PDO::PARAM_STR);
-                    $pdo->bindParam(":mensaje", $datosC["msg"], PDO::PARAM_STR); 
+                    $pdo    ->  bindParam(":nombre",    $datosC["nomb"],    PDO::PARAM_STR);
+                    $pdo    ->  bindParam(":email",     $datosC["correo"],  PDO::PARAM_STR);
+                    $pdo    ->  bindParam(":direccion", $datosC["direct"],  PDO::PARAM_STR);
+                    $pdo    ->  bindParam(":mensaje",   $datosC["msg"],     PDO::PARAM_STR); 
                     
                     if ($pdo->execute()) {
                         return 'bien';
