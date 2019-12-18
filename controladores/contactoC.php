@@ -14,7 +14,7 @@ class contaC{
                 header("location:index.php?ruta=contact");
                 */
             }else{
-               echo $respuesta; 
+               echo "Error al enviar el mensaje: ".$respuesta; 
             }
         }
     }
