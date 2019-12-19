@@ -83,7 +83,7 @@
               </div>
             </div>
           </div>
-  <!--segundo-->
+          <!--segundo-->
           <div class="row">
             <div class="col-md-3">
               <div class="fa-container">
@@ -136,7 +136,7 @@
               </div>
               <div>
                 <p>
-                  Creamos un perfil online para tu marca y nos encargamos de publicar contenido de valor para mantener una comunicación cercana con tus clientes.
+                  Creamos un perfil online para tu marca, ya sea Facebook, Twitter, Instagram o LinkedIn y nos encargamos de publicar contenido de valor para mantener una comunicación cercana con tus clientes.
                 </p>
               </div>
             </div>
@@ -199,7 +199,7 @@
                 </p>
               </div>
             </div>
-        </div>
+          </div>
           <div class="row">
             <div class="col-md-3">
               <div class="fa-container">
@@ -238,13 +238,22 @@
           <small class="signature cTitle">Diseñamos tu página web.</small>
         </li>
         <li>
-          <small class="signature cTitle">Juntos revisamos tu página web.</small>
+          <small class="signature cTitle">Proponemos una campaña de redes sociales</small>
           <p>
-            Se exponen comentarios y se realizan los cambios correspondientes en caso de ser necesarios.
+            Incluye un diseño de una línea gráfica, concepto de estrategia y contenido de valor.
+          </p>
+        </li>
+        <li>
+          <small class="signature cTitle">Realizamos juntos una revisión</small>
+          <p>
+            Revisamos la página web y la propuesta de marketing digital.
           </p>
         </li>
         <li>
           <small class="signature cTitle">Se hace la entrega final de la página web.</small>
+          <p>
+            Se exponen comentarios y se realizan los cambios correspondientes en caso de ser necesarios.
+          </p>
         </li>
       </ol>
     </div>

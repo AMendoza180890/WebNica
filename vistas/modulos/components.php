@@ -61,155 +61,6 @@
                 </p>
               </ol>
             </div>
-            <!--<blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </blockquote>
-          
-          </p>
-        </div>
-
-        <div class="template-example">
-          <h2 class="template-title-example">Headings</h2>
-          
-          <table class="table table-bordered">
-            <tr><td><h1>H1: Heading 1</h1></td></tr>
-            <tr><td><h2>H2: Heading 2</h2></td></tr>
-            <tr><td><h3>H3: Heading 3</h3></td></tr>
-            <tr><td><h4>H4: Heading 4</h4></td></tr>
-          </table>
-          
-        </div>
-
-        
-        <div class="template-example">
-          <h2 class="template-title-example">List</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="template-title-example">Ordered</h3>
-              <ul>
-                <li>Consectetur adipiscing elit</li>
-                <li>Integer molestie lorem at massa</li>
-                <li>Facilisis in pretium nisl aliquet</li>
-                <li>Nulla volutpat aliquam velit</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <h3 class="template-title-example">Number</h3>
-              <ol>
-                <li>Consectetur adipiscing elit</li>
-                <li>Integer molestie lorem at massa</li>
-                <li>Facilisis in pretium nisl aliquet</li>
-                <li>Nulla volutpat aliquam velit</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        
-
-        
-      </div>
-
-      <div class="col-xs-12 col-md-6">
-        <div class="template-example">
-          
-          <div class="row">
-            
-            <div class="col-md-6">
-                <h2 class="template-title-example">Icons</h2>
-                <p>
-                    <span class="fa-icon">
-                      <i class="fa fa-facebook"></i>
-                    </span>
-                  
-                    <span class="fa-icon">
-                      <i class="fa fa-twitter"></i>
-                    </span>
-                  
-                    <span class="fa-icon">
-                      <i class="fa fa-linkedin"></i>
-                    </span>
-                 
-                    <span class="fa-icon">
-                      <i class="fa fa-instagram"></i>
-                    </span>
-                </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="template-example">
-          <h2 class="template-title-example">Buttons</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="template-title-example">Primary</h2>
-              <div class="row">
-                  <div class="col-md-6">
-                  <p><a href="" class="btn btn-primary btn-lg">Primary Large</a></p>
-                  <p><a href="" class="btn btn-primary">Primary </a></p>
-                  <p><a href="" class="btn btn-primary btn-sm">Primary Small</a></p>
-                </div>
-              </div>
-
-              <h3 class="template-title-example">Default</h2>
-              <div class="row">
-                  <div class="col-md-6">
-                  <p><a href="" class="btn btn-default btn-lg">Default Large</a></p>
-                  <p><a href="" class="btn btn-default">Default </a></p>
-                  <p><a href="" class="btn btn-default btn-sm">Default Small</a></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <h3 class="template-title-example">Secondary</h2>
-              <div class="row">
-                  <div class="col-md-6">
-                  <p><a href="" class="btn btn-info btn-lg">Secondary Large</a></p>
-                  <p><a href="" class="btn btn-info">Secondary </a></p>
-                  <p><a href="" class="btn btn-info btn-sm">Secondary Small</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-            <!-- Formulario de ejemplo
-             
-           <div class="template-example">
-              <h2 class="template-title-example">Inputs</h2>
-
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
-
-              <div class="form-group">
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Email me a copy
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox2" value="option2"> I am a human
-                </label>
-              </div>
-
-              <div class="form-group">
-                <textarea class="form-control" rows="3" placeholder="Enter your message"></textarea>
-              </div>
-
-              <div class="alert alert-success" role="alert">Your message was successfully sent</div>
-              <div class="alert alert-danger" role="alert">Your message has not been sent, restart</div>
-            </div> -->
         </div>
       </div>
     </div>
@@ -222,7 +73,8 @@
         <div class="col-xs-12">
           <div class="text-justify">
             <h2 class="text-center">¿Qué es el Hosting de una página web?</h2>
-            <p>Si estás pensando en poner tu marca en línea a través de un sitio web, es importante tener algunos conocimientos generales en relación a información más técnica de una página web, como el caso del Hosting. <br> <br>
+            <p>
+              Si estás pensando en poner tu marca en línea a través de un sitio web, es importante tener algunos conocimientos generales en relación a información más técnica de una página web, como el caso del Hosting. <br> <br>
 
               Para que un sitio web funcione de forma correcta, es imprescindible tener un servidor web, una máquina que está conectada a internet, con un ancho de banda más amplio que las conexiones normales. <br> <br>
 
@@ -252,6 +104,49 @@
             </ol>
 
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <div class="template-example">
+          <h2 class="template-title">La publicidad ahora está en redes sociales </h2>
+          <p>
+            Lejos quedó la publicidad tradicional, los anuncios de radio o televisión parecen ser cosa del pasado, lo nuevo para los negocios es el marketing digital, una forma de llegar a los clientes de manera más segmentada, sin tener barreras geográficas y siendo esta menos costosa.
+            <br><br>
+            Las redes sociales son una excelente oportunidad de ofrecer a tu marca la posibilidad de darse una reputación online, darle personalidad a tus mensajes y acercarte a tus clientes, para así potenciar tus ventas o servicios.
+            <br><br>
+            A continuación te presentamos tres ventajas de las redes sociales para tu negocio:
+            <div class="template-Description">
+              <ol class="features">
+                <li>
+                  <h2 class="signature color_Txt_Black">Aumenta la visibilidad de tu marca </h2>
+                </li>
+                <p>
+                  Actualmente, el mundo está conectado a través de las redes sociales, según un estudio realizado por la Social Platforms: Active User Accounts, en el mundo existen 3.000 millones de usuarios que se conectan a diario a las redes sociales, es decir un 42% de la población mundial.
+                  <br><br>
+                  De estas personas, 2, 230 millones son usuarios de Facebook, Twitter tiene 326 millones de usuarios activos en un mes y LinkedIn 303 millones de usuarios activos en un mes, por lo tanto cuando tu negocio es parte de este mundo virtual, puede llegar a esta gran cantidad de personas, de manera más personalizada y amigable.
+                </p>
+
+                <li>
+                  <h2 class="signature color_Txt_Black">Atraen tráfico a tu página web</h2>
+                </li>
+                <p>
+                  En caso de contar con un blog o página web, es primordial contar con un perfil en redes sociales que atraiga a los usuarios hacia tu página web.
+                </p>
+
+                <li>
+                  <h2 class="signature color_Txt_Black">Aumenta tus ventas</h2>
+                </li>
+                <p>
+                  Debido a que las redes sociales llegan a tus clientes con tan solo un click, existe una comunicación más fluida con los clientes, esto en la mayoría de los casos, desencadena en un aumento en las ventas de tu negocio.
+                </p>
+              </ol>
+            </div>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@
                                             En medio de la crisis que vive Nicaragua, aprovechar
                                             las ventajas del mercado digital debe ser prioridad
                                             para los negocios locales. <br />
-                                            A través de una página web, tu negocio puede crecer
+                                            A través de una página web y redes sociales, tu negocio puede crecer
                                             exponencialmente, llegando a un mercado mucho más
                                             amplio y de manera permanente, puesto que la red te
                                             permite estar 24 horas del día a disposición de tus
@@ -99,7 +99,7 @@
 
                         <p>Nuestra principal motivación es ayudar a que crezcan los negocios de nuestros clientes. En medio de una
                             economía mermada por la situación sociopolítica del país, aprovechar las ventajas del mercadeo digital a
-                            través de una página web, para dar a conocer tu negocio a nuevos mercados, mejora la atención al cliente,
+                            través de una página web y redes sociales, para dar a conocer tu negocio a nuevos mercados, mejora la atención al cliente,
                             puesto que se ofrece un servicio de información durante 24 horas, al alcance de un click para tus clientes
                             potenciales.</p>
 
