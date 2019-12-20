@@ -8,9 +8,9 @@ class ConexionBD{
     public function __construct()
     {
         $this->host     =   $_SERVER['SERVER_NAME'];
-        $this->db       =   "dbwebnica";
-        $this->user     =   "root";
-        $this->passw    =   "";
+        $this->db       =   "_dbwebnica";
+        $this->user     =   "userWebNi";
+        $this->passw    =   "Soloyo246$$";
     }
             
     public  function cBD(){
