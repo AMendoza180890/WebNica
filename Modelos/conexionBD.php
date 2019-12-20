@@ -8,8 +8,8 @@ class ConexionBD{
     public function __construct()
     {
         $this->host     =   $_SERVER['SERVER_NAME'];
-        $this->db       =   "_dbwebnica";
-        $this->user     =   "userWebNi";
+        $this->db       =   "marvin_dbwebnica";
+        $this->user     =   "marvin_userWebNi";
         $this->passw    =   "Soloyo246$$";
     }
             
