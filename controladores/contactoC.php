@@ -1,4 +1,6 @@
 <?php
+require_once 'mensaje.php';
+
 class contaC{
     public function contactInsert(){
         if (isset($_POST['nameC'])) {
@@ -9,12 +11,12 @@ class contaC{
             $respuesta = ContactoM::contactIngresoM($datosC, $tablaBD);
             
             if($respuesta == 'bien'){
-                echo "mensaje enviado";
+                mensajes::exito("Enviado");
                 /*
                 header("location:index.php?ruta=contact");
                 */
             }else{
-               echo "Error al enviar el mensaje: ".$respuesta; 
+               mensajes::error($respuesta); 
             }
         }
     }

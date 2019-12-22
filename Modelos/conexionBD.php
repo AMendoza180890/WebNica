@@ -7,7 +7,8 @@ class ConexionBD{
 
     public function __construct()
     {
-        $this->host     =   'mysql1007.mochahost.com';
+        $this->host     =   $_SERVER['SERVER_NAME'];
+        //$this->host     =   'mysql1007.mochahost.com';
         $this->db       =   "marvin_dbwebnica";
         $this->user     =   "marvin_userWebNi";
         $this->passw    =   "Soloyo246$$";
