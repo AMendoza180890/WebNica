@@ -1,14 +1,20 @@
 <?php
     class Modelo{
-        static public function RutasModelo($rutas){
-            if ($rutas == 'about'||$rutas == 'components'||$rutas =='index'||$rutas == 'contact') {
-                $pagina = 'vistas/modulos/'.$rutas.'.php';
-            }else if ($rutas == 'index') {
-                $pagina = "vistas/modulos/index.php";
-            }else {
-                $pagina = "vistas/modulos/index.php";
+
+        public function RutasModelo($rutas){
+        try {
+            $pages = array('index', 'about', 'components', 'contact', 'login');
+
+            for ($i = 0; $i < count($pages); $i++) {
+                if ($rutas == $pages[$i]) {
+                    $pagina = 'vistas/modulos/' . $rutas . '.php';
+                    break;
+                }
             }
             return $pagina;
+        } catch (Exception $ex) {
+            return mensajes::error($ex);
         }
     }
+}
 ?>

@@ -5,15 +5,20 @@ class RutasControlador{
     }
 
     public function Rutas(){
-        if (isset($_GET['ruta'])) {
-            $rutas = $_GET['ruta'];
-        }else {
-            $rutas='index';
-        }
+        try {
+            if (isset($_GET['ruta'])) {
+                $rutas = $_GET['ruta'];
+            }else {
+                $rutas='index';
+            }
 
-        $respuesta = Modelo::RutasModelo($rutas);
-        
-        include $respuesta;
+            $res = new Modelo();  
+            $respuesta = $res->RutasModelo($rutas);          
+
+            include $respuesta;
+        } catch (Exception $ex) {
+            mensajes::error($ex);
+        }     
     }
 }
 ?>
