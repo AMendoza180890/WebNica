@@ -12,8 +12,7 @@ class RutasControlador{
                 $rutas='index';
             }
 
-            $res = new Modelo();  
-            $respuesta = $res->RutasModelo($rutas);          
+            $respuesta = Modelo::RutasModelo($rutas);          
 
             include $respuesta;
         } catch (Exception $ex) {

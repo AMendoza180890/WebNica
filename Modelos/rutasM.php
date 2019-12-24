@@ -1,9 +1,9 @@
 <?php
     class Modelo{
 
-        public function RutasModelo($rutas){
+        public static function RutasModelo($rutas){
         try {
-            $pages = array('index', 'about', 'components', 'contact', 'login');
+            $pages = array('index', 'about', 'components', 'contact', 'login','indexLogin');
 
             for ($i = 0; $i < count($pages); $i++) {
                 if ($rutas == $pages[$i]) {
