@@ -9,11 +9,10 @@
           <div class="row">
             <!--formulario-->
             <div class="col-md-6">
-              <?php
-                include 'contactForm.php';
-              ?>
+<?php
+  include 'contactForm.php';
+?>
             </div>
-
             <!--panel derecho-->
             <div class="col-md-5 col-md-offset-1">
 

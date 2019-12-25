@@ -1,8 +1,5 @@
-<header>
-    <link rel="stylesheet" href="vistas/css/signin.css">
-</header>
 <div class="container">
-    <h2 class="form-signin-heading text-center">Bienvenido Web-Nica</h2>
+    <h2 class="form-signin-heading text-center">Bienvenido a Web-Nica</h2>
     <form class="form-signin" method="POST">
         <label for="inputEmail" class="sr-only">Usuario</label>
         <input type="text" id="inputEmail" class="form-control" name="user" placeholder="Usuario" required autofocus>
@@ -15,9 +12,8 @@
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
     </form>
-
 </div>
-
 <?php
-$ingreso = new AdminC();
-$ingreso -> IngresoC();
+    $ingreso = new AdminC();
+    $ingreso -> IngresoC();
+?>

@@ -23,8 +23,8 @@
                     </a>
                 </p>
                 <p>
-                    <small>© Untitled | Website created with
-                        <a href="http://www.mashup-template.com/" class="link-like-text" title="Create website with free html template">Mashup Template</a>/<a href="http://www.unsplash.com/" class="link-like-text" title="Beautiful Free Images">Unsplash</a></small>
+                    <small>© Website creado por
+                        <a href="http://www.web-nica.com/index.php?ruta=index" class="link-like-text" title="Create website with free html template">Web-Nica</a></small>
                 </p>
             </div>
 

@@ -3,7 +3,7 @@
 
         public static function RutasModelo($rutas){
         try {
-            $pages = array('index', 'about', 'components', 'contact', 'login','indexLogin');
+            $pages = array('index', 'about', 'components', 'contact', 'login','indexLogin','error');
 
             for ($i = 0; $i < count($pages); $i++) {
                 if ($rutas == $pages[$i]) {
@@ -11,7 +11,12 @@
                     break;
                 }
             }
-            return $pagina;
+            if (!empty($pagina)) {
+                return $pagina;
+            }else {
+                return  $pagina = 'vistas/modulos/error.php';
+            }
+            
         } catch (Exception $ex) {
             return mensajes::error($ex);
         }
