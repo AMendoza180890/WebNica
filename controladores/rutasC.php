@@ -11,9 +11,7 @@ class RutasControlador{
             }else {
                 $rutas='index';
             }
-
             $respuesta = Modelo::RutasModelo($rutas);          
-
             include $respuesta;
         } catch (Exception $ex) {
             mensajes::error($ex);

@@ -7,14 +7,12 @@ class AdminM extends ConexionBD{
         try {
             $conec = new ConexionBD;
             $pdo = $conec->cBD()->prepare("SELECT CatUsuario, CatPass FROM $tabla WHERE CatUsuario = :usuario AND CatPass = :passw");
-            
             $pdo    ->  bindParam(":usuario",   $datosC['Usuario'],     PDO::PARAM_STR);
             $pdo    ->  bindParam(":passw",     $datosC['password'],     PDO::PARAM_STR);
-
-            $pdo ->execute();
-
+            $pdo    ->  execute();
             return $pdo->fetch();
-
+            $pdo    ->  close();
+            
         } catch (PDOException $ex) {
             mensajes::error($ex);
         }
