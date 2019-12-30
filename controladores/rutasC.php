@@ -11,7 +11,8 @@ class RutasControlador{
             }else {
                 $rutas='index';
             }
-            $respuesta = Modelo::RutasModelo($rutas);          
+            $sourse = 'catpaginas';
+            $respuesta = Modelo::RutasModelo($rutas,$sourse);          
             include $respuesta;
         } catch (Exception $ex) {
             mensajes::error($ex);

@@ -3,10 +3,10 @@
 
     class Modelo extends ConexionBD{
 
-        public static function RutasModelo($rutas){
+        public static function RutasModelo($rutas,$sourse){
         try {
             $conec  =   new ConexionBD();
-            $pdo    =   $conec->cBD()->prepare('SELECT * FROM CatPaginas');
+            $pdo    =   $conec->cBD()->prepare("SELECT * FROM $sourse");
             $pdo    ->  execute();
             
             while   ($pages         =       $pdo->fetch(PDO::FETCH_ASSOC)){
