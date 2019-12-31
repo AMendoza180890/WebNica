@@ -4,7 +4,7 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <div class="white-text-container background-image-container background-image-container-md slide1" style="background-image: url('vistas/assets/images/Sliders-01.svg')">
+                        <div class="white-text-container background-image-container background-image-container-md slide1" style="background-image: url('vistas/assets/images/Sliders1-01.png')">
                             <div class="opacity"></div>
                             <div class="container">
                                 <div class="row">
@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="item">
-                        <div class="white-text-container background-image-container background-image-container-md slide2" style="background-image: url('vistas/assets/images/Sliders-02.svg')">
+                        <div class="white-text-container background-image-container background-image-container-md slide2" style="background-image: url('vistas/assets/images/Sliders2-02.png')">
                             <div class="opacity"></div>
                             <div class="container">
                                 <div class="row">

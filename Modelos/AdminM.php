@@ -11,7 +11,6 @@ class AdminM extends ConexionBD{
             $pdo    ->  bindParam(":passw",     $datosC['password'],     PDO::PARAM_STR);
             $pdo    ->  execute();
             return $pdo->fetch();
-            $pdo    ->  close();
             
         } catch (PDOException $ex) {
             mensajes::error($ex);

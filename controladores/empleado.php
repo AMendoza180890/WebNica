@@ -2,8 +2,7 @@
 class EmpleadoC{
     public static function empleadoCont(){
         try {
-                $sourse = 'catempleado';
-                $empleados = empleadoM::empleadoModelo($sourse);
+                $empleados = empleadoM::empleadoModelo();
                 return $empleados;   
         }catch (exception $ex) {
             mensajes::error($ex);

@@ -19,7 +19,6 @@
                     }else{
                         return 'mal';
                     }
-                    $pdo    ->  close();
                 } 
                 catch (Exception $ex) {
                     return $ex;
