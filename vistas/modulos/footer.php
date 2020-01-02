@@ -1,4 +1,4 @@
-<div class="section-container footer-container">
+<div class="section-container footer-container background-color-containerOrange">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
