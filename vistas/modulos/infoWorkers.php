@@ -1,7 +1,7 @@
 <?php
 $worker = new EmpleadoC();
 $workerC = $worker::empleadoCont();
-    for ($i=0; $i < 3; $i++) {         
+    for ($i=0; $i < count($workerC); $i++) {         
         echo '<div class="col-md-4">';
         echo '<div class="fa-container">';
         echo '<img class="img-responsive" src="vistas/assets/images/' . $workerC[$i]->CatEmpImagen . '">';

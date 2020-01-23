@@ -18,5 +18,15 @@ class RutasControlador{
             mensajes::error($ex);
         }     
     }
+
+    public function siteWebPageLoad(){
+        try{
+            $sourse = 'catpaginas';
+                $pagLoad = Modelo::webPage($sourse);
+                return $pagLoad;
+        }catch(Exception $ex){
+            mensajes::error($ex);
+        }
+    }
 }
 ?>

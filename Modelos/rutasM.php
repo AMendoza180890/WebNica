@@ -2,7 +2,6 @@
     require_once 'conexionBD.php';
 
     class Modelo extends ConexionBD{
-
         public static function RutasModelo($rutas, $sourse){
         try {
             $conec  =   new ConexionBD();
@@ -21,6 +20,20 @@
             }
         } catch (Exception $ex) {
             return mensajes::error($ex);
+        }
+    }
+//Cargar paginas dinamico
+    public static function webPage($sourse){
+        try{
+            $conec = new ConexionBD();
+            $pag = $conec->cBD()->prepare("SELECT * FROM $sourse WHERE CatPagEstado = 'enable'");
+            $pag->execute();
+            while ($array = $pag->fetchObject(__CLASS__)) {
+                $ListPag[] = $array;
+            }
+            return $ListPag;
+        }catch(PDOException $pdoe){
+            mensajes::error($pdoe);
         }
     }
 }
