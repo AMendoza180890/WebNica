@@ -34,8 +34,7 @@
                 $pagLoad = $pagina->siteWebPageLoad();
                 for ($i=0; $i < count($pagLoad) ; $i++) { 
                     echo '<li><a href="index.php?ruta='.$pagLoad[$i]->CatPagNombre.'" title="" class="active">'.$pagLoad[$i]->CatPagEtiqueta.'</a></li>';
-                }
-            ?>
+                }?>
             <!--<li><a href="index.php?ruta=index" title="" class="active">Home</a></li>
                 <li><a href="index.php?ruta=about" title="">Nuestros Servicios</a></li>
                 <li><a href="index.php?ruta=components" title="">Educación Web</a></li>

@@ -21,7 +21,7 @@
                 <p>42 rue Rouelle <br />75015 Paris FRANCE</p>
               </div>
               <div>
-                <p>contact@mybusiness.com<br>+331 45 31 64 32</p>
+                <p>info@web-nica.com<br>+505 8123-4567</p>
               </div>
             </div>
           </div>

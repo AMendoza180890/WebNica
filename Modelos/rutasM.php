@@ -26,7 +26,7 @@
     public static function webPage($sourse){
         try{
             $conec = new ConexionBD();
-            $pag = $conec->cBD()->prepare("SELECT * FROM $sourse WHERE CatPagEstado = 'enable'");
+            $pag = $conec->cBD()->prepare("SELECT * FROM $sourse WHERE CatPagEstado = 1 ");
             $pag->execute();
             while ($array = $pag->fetchObject(__CLASS__)) {
                 $ListPag[] = $array;

@@ -154,7 +154,7 @@
 
                     <small class="signature">Misión</small>
                     <p class="noto">
-                        Nuestra misión principal, es brindar a nuestros clientes un servicio que les aporte valor a su negocio, para alcanzar sus objetivos.
+                        Brindar a nuestros clientes un servicio que les aporte valor a su negocio, para alcanzar sus objetivos.
                         <ol class="features numMision">
                             <li>
                                 <p class="noto">Ayudar al crecimiento de los negocios con los que trabajamos.</p>
