@@ -2,12 +2,12 @@
 require_once 'ConexionBD.php';
     class UsuariosM extends ConexionBD{
 
-        public function IngresoUsuarioM($datosC, $tablaBD){
+        public function IngresoUsuarioM($datosC){
             try {
                 $con = new ConexionBD();
-                $pdo = $con->cBD()->prepare("SELECT CatUsuario, CatPass FROM $tablaBD WHERE CatUsuario = :usuario");
-                $pdo -> bindParam(":usuario",$datosC['usuario'],PDO::PARAM_STR);
-                $pdo ->execute();
+                $pdo = $con->cBD()->prepare("SELECT CatUsuario, CatPass FROM catusuario WHERE CatUsuario = :CatUsuario");
+                $pdo -> bindParam(":CatUsuario",$datosC['CatUsuario'],PDO::PARAM_STR);
+                $pdo -> execute();
                 return $pdo -> fetch();
             } catch (Exception $ex) {
                 mensajes::error($ex);

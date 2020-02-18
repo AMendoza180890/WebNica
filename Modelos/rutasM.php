@@ -1,10 +1,10 @@
 <?php
     require_once 'conexionBD.php';
 
-    class Modelo extends ConexionBD{
+    class Modelo extends ConBD{
         public static function RutasModelo($rutas, $sourse){
         try {
-            $conec  =   new ConexionBD();
+            $conec  =   new ConBD();
             $pdo    =   $conec-> cBD()->prepare("SELECT * FROM $sourse");
             $pdo    ->  execute();
             while ($pages  =  $pdo->fetch(PDO::FETCH_ASSOC)){
@@ -25,7 +25,7 @@
 //Cargar paginas dinamico
     public static function webPage($sourse){
         try{
-            $conec = new ConexionBD();
+            $conec = new ConBD();
             $pag = $conec->cBD()->prepare("SELECT * FROM $sourse WHERE CatPagEstado = 1 ");
             $pag->execute();
             while ($array = $pag->fetchObject(__CLASS__)) {

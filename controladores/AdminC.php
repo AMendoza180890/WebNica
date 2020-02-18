@@ -6,10 +6,10 @@ class  AdminC{
             $tablaBD = 'catusuario';
             $res = new AdminM();
             $respuesta = $res->IngresoM($datosC,$tablaBD);
-            if ($respuesta['CatUsuario'] == $_POST['user'] && $respuesta['CatPass'] == $_POST['passw']) {   
-                        session_start();
-                        $_SESSION['ingreso'] = true;
-                        header('location: index.php?ruta=indexLogin');
+            if ($respuesta['CatUsuario'] == $_POST['user'] && $respuesta['CatPass'] == $_POST['passw']) {
+                echo '<script> 
+                        windows.location="index.php?url=indexLogin";
+                    </script>';
             }else {
                 mensajes::error('No se puede agregar al recurso');
             }  

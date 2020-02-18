@@ -8,9 +8,6 @@ class contaC{
             $respuesta = ContactoM::contactIngresoM($datosC, $tablaBD);
             if($respuesta == 'bien'){
                 mensajes::exito("Enviado");
-                /*
-                header("location:index.php?ruta=contact");
-                */
             }else{
                mensajes::error($respuesta); 
             }

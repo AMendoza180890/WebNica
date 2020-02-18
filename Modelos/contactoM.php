@@ -1,11 +1,11 @@
 <?php
     require_once 'conexionBD.php';
 
-    class ContactoM extends ConexionBD{
+    class ContactoM extends ConBD{
 
            static public function contactIngresoM($datosC, $tablaBD){
                 try {
-                    $conec = new ConexionBD;
+                    $conec = new ConBD;
                     $pdo = $conec-> cBD()->prepare("INSERT INTO $tablaBD (CatCliContName,CatCliContEmail,CatCliContAdress,CatCliContMessage)  
                         VALUES (:nombre, :email, :direccion, :mensaje)");
 

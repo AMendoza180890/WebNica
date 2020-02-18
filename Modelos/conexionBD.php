@@ -1,5 +1,5 @@
 <?php
-class ConexionBD{
+class ConBD{
             private $host;
             private $db;
             private $user;
