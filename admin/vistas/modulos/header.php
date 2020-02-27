@@ -1,6 +1,6 @@
 <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="#" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>W</b>N</span>
         <!-- logo for regular state and mobile devices -->
@@ -18,8 +18,14 @@
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="vistas/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                        <span class="hidden-xs">Alexander Pierce</span>
+                        <?php
+                            if ($_SESSION["CatUsuFoto"]=="") {
+                                echo '<img src="vistas/img/usuarios/defecto.png" class="user-image" alt="User Image">';
+                            }else {
+                                echo '<img src="'.$_SESSION['CatUsuFoto'].'" class="user-image" alt="User Image">';
+                            }
+                        ?>
+                        <span class="hidden-xs"><?php  echo $_SESSION["CatUsuario"]; ?></span>
                     </a>
                     <ul class="dropdown-menu">
                 </li>
@@ -29,7 +35,7 @@
                         <a href="#" class="btn btn-default btn-flat">Perfil</a>
                     </div>
                     <div class="pull-right">
-                        <a href="#" class="btn btn-danger btn-flat">Salir</a>
+                        <a href="salir" class="btn btn-danger btn-flat">Salir</a>
                     </div>
                 </li>
             </ul>

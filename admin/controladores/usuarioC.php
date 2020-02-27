@@ -8,9 +8,15 @@
                         $usu = new UsuariosM();
                         $respuesta = $usu->IngresoUsuarioM($datosC);
                         if ($respuesta['CatUsuario'] == $_POST['usuario-ing'] && $respuesta['CatPass'] == $_POST['clave-Ing']) {
-                                echo '<script> 
-                                        window.location = "index.php?url=inicio";
-                                        </script>';
+                            $_SESSION["Ingreso"] = true;
+                            $_SESSION["CatUsuId"] = $respuesta["CatUsuId"];
+                            $_SESSION["CatUsuario"] = $respuesta["CatUsuario"];
+                            $_SESSION["CatPass"] = $respuesta["CatPass"];
+                            $_SESSION["CatUsuFoto"] = $respuesta["CatUsuFoto"];
+                            $_SESSION["CatRol"] = $respuesta["CatRol"];
+                            echo '<script> 
+                                    window.location = "index.php?url=inicio";
+                                </script>';
                         }else {
                             echo 'ERROR AL INGRESAR';
                         }
