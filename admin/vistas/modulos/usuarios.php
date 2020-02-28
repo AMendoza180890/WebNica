@@ -13,7 +13,7 @@
          <div class="box">
              <div class="box-header with-border">
 
-                 <button class="btn btn-primary">Crear</button>
+                 <button class="btn btn-primary" data-toggle="modal" data-target="#CrearUsuarios">Crear</button>
 
                  <div class="box-tools pull-right">
                      <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -35,17 +35,17 @@
                          </tr>
                      </thead>
                      <tbody>
-                        <?php
+                         <?php
                             $verU = new UsersList();
-                            $verU -> verUsuarioC();
-                        ?>
+                            $verU->verUsuarioC();
+                            ?>
                      </tbody>
                  </table>
              </div>
              <!-- /.box-footer-->
          </div>
          <!-- /.box -->
-
      </section>
      <!-- /.content -->
  </div>
+ <?php include 'vistas/modulos/RegUsuarios.php';?>
