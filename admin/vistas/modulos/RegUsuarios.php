@@ -11,11 +11,11 @@
                     <div class="box-body">
                         <div class="form-group">
                             <h2>Seleccionar el Empleado:</h2>
-                            <select name="rolN" class="form-control input-lg">
-                                <option>Seleccione Rol...</option>
-                                <option value="1">Administrador</option>
-                                <option value="2">Editor de Contenido</option>
-                                <option value="3">Marketing</option>
+                            <select name="empN" class="form-control input-lg">
+                                <?php
+                                $ListEmp = new EmpList();
+                                $ListEmp->verEmpC();
+                                ?>
                             </select>
                         </div>
                         <div class="form-group">

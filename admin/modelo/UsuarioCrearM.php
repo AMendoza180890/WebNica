@@ -4,12 +4,17 @@
         public function CrearUsuarioM($tablabd, $datosC){
             try {
                 $con = new ConexionBD;
-                $pdo = $con->cBD()->prepare("INSERT INTO $tablabd (CatEmpId, CatUsuario, CatPass, CatRol, CatUsuFoto) VALUES (:Empleado,:usuario, :clave, :rol, :foto)");
-                $pdo    ->  bindParam(":Empleado", $datosC["Empleado"],pdo::PARAM_STR);
-                $pdo    ->  bindParam(":usuario", $datosC["usuario"], pdo::PARAM_STR);
-                $pdo    ->  bindParam(":clave", $datosC["clave"], pdo::PARAM_STR);
-                $pdo    ->  bindParam(":rol", $datosC["rol"], pdo::PARAM_STR);
-                $pdo    ->  bindParam(":foto", $datosC["foto"], pdo::PARAM_STR);
+                $pdo = $con->cBD()->prepare("INSERT INTO $tablabd (CatEmpId, CatUsuario, CatPass, CatRol, CatUsuFoto) VALUES (:CatEmpId,:CatUsuario, :CatPass, :CatRol, :CatUsuFoto)");
+                $pdo    ->  bindParam(":CatEmpId", $datosC["CatEmpId"],pdo::PARAM_STR);
+                $pdo    ->  bindParam(":CatUsuario", $datosC["CatUsuario"], pdo::PARAM_STR);
+                $pdo    ->  bindParam(":CatPass", $datosC["CatPass"], pdo::PARAM_STR);
+                $pdo    ->  bindParam(":CatRol", $datosC["CatRol"], pdo::PARAM_STR);
+                $pdo    ->  bindParam(":CatUsuFoto", $datosC["CatUsuFoto"], pdo::PARAM_STR);
+                if ($pdo    ->  execute()) {
+                    return true;
+                } else {
+                    return false;
+                }
             } catch (exception $ex) {
                 mensajes::error($ex);
             }

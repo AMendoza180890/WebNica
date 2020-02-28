@@ -1,13 +1,12 @@
 <?php
 require_once 'ConexionBD.php';
-class UsuariosListM extends ConexionBD
+class EmpListM extends ConexionBD
 {
-
-    public static function listaUsuario()
+    public static function listaEmp()
     {
         try {
             $con = new ConexionBD();
-            $pdo = $con->cBD()->prepare("SELECT a.CatUsuId, a.CatUsuario, a.CatPass, a.CatUsuFoto, b.catrolnombre FROM catusuario as a inner join catroles as b where a.CatRol = b.catrolid");
+            $pdo = $con->cBD()->prepare("SELECT CatEmpId, CatEmpNombres FROM catempleado");
             $pdo->execute();
             return $pdo->fetchAll();
         } catch (Exception $ex) {
