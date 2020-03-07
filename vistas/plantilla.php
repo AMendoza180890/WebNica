@@ -16,6 +16,7 @@
     <link href="vistas/css/style.css" rel="stylesheet" />
     <script src="vistas/js/util.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vistas/css/superslides.css">
     <title>Web-Nica</title>
 </head>
 <body>
@@ -38,6 +39,8 @@
             navActivePage();
         });
     </script>
+    <script src="vistas/js/jquery.js"></script>
+    <script src="vistas/js/jquery.superslides.js"></script>
     <script type="text/javascript" src="vistas/js/main.41beeca9.js"></script>
     <script src="vistas/js/smooth-scroll.polyfills.js"></script>
     <script>

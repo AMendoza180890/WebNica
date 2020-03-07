@@ -1,10 +1,10 @@
 <div class="containerheader">
     <div class="row">
         <div class="col-xs-12">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
+            <div id="slides">
+                <div class="slides-container">
                     <div class="item active">
-                        <div class="white-text-container background-image-container background-image-container-md slide1" style="background-image: url('vistas/assets/images/Sliders1-01.png')">
+                        <div class="white-text-container background-image-container background-image-container-md slide1" style="background-image: url('vistas/assets/images/SlidersWeb-01.jpg')">
                             <div class="opacity"></div>
                             <div class="container">
                                 <div class="row">
@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="item">
-                        <div class="white-text-container background-image-container background-image-container-md slide2" style="background-image: url('vistas/assets/images/Sliders2-02.png')">
+                        <div class="white-text-container background-image-container background-image-container-md slide2" style="background-image: url('vistas/assets/images/SlidersWeb-02.jpg')">
                             <div class="opacity"></div>
                             <div class="container">
                                 <div class="row">
@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="item">
-                        <div class="white-text-container background-image-container background-image-container-md slide3" style="background-image: url('vistas/assets/images/Sliders-03.svg')">
+                        <div class="white-text-container background-image-container background-image-container-md slide3" style="background-image: url('vistas/assets/images/SlidersWeb-03.jpg')">
                             <div class="opacity"></div>
                             <div class="container">
                                 <div class="row">
@@ -74,16 +74,12 @@
                             </div>
                         </div>
                     </div>
-
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
 
 <div id="abtUs" class="section-container border-section-container">

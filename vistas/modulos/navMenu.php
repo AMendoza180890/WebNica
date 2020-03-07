@@ -32,6 +32,7 @@
             <?php
                 $pagina =  new RutasControlador();
                 $pagLoad = $pagina->siteWebPageLoad();
+                
                 for ($i=0; $i < count($pagLoad) ; $i++) { 
                     echo '<li><a href="index.php?ruta='.$pagLoad[$i]->CatPagNombre.'" title="" class="active">'.$pagLoad[$i]->CatPagEtiqueta.'</a></li>';
                 }?>

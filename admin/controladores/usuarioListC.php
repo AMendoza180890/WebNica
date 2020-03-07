@@ -16,7 +16,7 @@ class UsersList{
                              <td>
                                  <div class="btn-group">
                                      <button class="btn btn-success"><i class="fa fa-pencil"></i></button>
-                                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                                     <button class="btn btn-danger BorrarU" Uid="'. $value["CatUsuId"].'" Ufoto="'. $value["CatUsuFoto"].'"><i class="fa fa-times"></i></button>
                                  </div>
                              </td>
                          </tr>';

@@ -7,10 +7,11 @@ class ConBD{
 
     public function __construct()
     {
-        $this->host     =   $_SERVER['SERVER_NAME'];
-        $this->db       =   "dbwebnica";
-        $this->user     =   "root";
-        $this->passw    =   "";
+        
+        $this->host     =   getenv("DDBB_HOST");
+        $this->db       =   getenv("DDBB_BD");
+        $this->user     =   getenv("DDBB_USER");
+        $this->passw    =   getenv("DDBB_PASSWORD");
         /*
         $this->host     =   'mysql1007.mochahost.com';
         $this->db       =   "marvin_dbwebnica";

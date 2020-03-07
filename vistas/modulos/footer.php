@@ -30,18 +30,21 @@
 
             <div class="col-md-4">
                 <h4>Subscribe to newsletter</h4>
-
                 <div class="form-group">
                     <div class="input-group">
-                        <input type="text" class="form-control footer-input-text" />
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-primary btn-newsletter ">
-                                OK
-                            </button>
-                        </div>
+                        <form action="https://web-nica.us4.list-manage.com/subscribe/post?u=c844cdb24a939b30f893aa9db&amp;id=2bb392ccab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <input type="email" name="EMAIL" class="form-control footer-input-text" id="mce-EMAIL" placeholder="Email" value="" require />
+                                <input type="text" name="b_c844cdb24a939b30f893aa9db_2bb392ccab" class="form-control footer-input-text" placeholder="Nombres" tabindex="-1" value="" />
+                                <div class="input-group-btn">
+                                    <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-newsletter button">
+                                        OK
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
