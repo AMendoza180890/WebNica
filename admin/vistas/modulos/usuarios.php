@@ -23,7 +23,7 @@
                  </div>
              </div>
              <div class="box-body">
-                 <table class="table table-bordered table-hover table-striped">
+                 <table class="table table-bordered table-hover table-striped TB">
                      <thead>
                          <tr>
                              <th>N</th>
@@ -38,7 +38,7 @@
                          <?php
                             $verU = new UsersList();
                             $verU->verUsuarioC();
-                            ?>
+                        ?>
                      </tbody>
                  </table>
              </div>
@@ -48,4 +48,4 @@
      </section>
      <!-- /.content -->
  </div>
- <?php include 'vistas/modulos/RegUsuarios.php';?>
+ <?php include 'vistas/modulos/RegUsuarios.php'; ?>

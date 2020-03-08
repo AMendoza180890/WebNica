@@ -54,3 +54,7 @@
         </div>
     </div>
 </div>
+<?php
+$borrarU = new BorrarUser();
+$borrarU->BorrarUserC();
+?>

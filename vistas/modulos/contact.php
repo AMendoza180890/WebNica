@@ -18,10 +18,7 @@
 
               <h3>Escríbenos y con gusto te atenderemos</h3>
               <div>
-                <p>42 rue Rouelle <br />75015 Paris FRANCE</p>
-              </div>
-              <div>
-                <p>info@web-nica.com<br>+505 8123-4567</p>
+                <p>info@web-nica.com<br><i class="fa fa-whatsapp" aria-hidden="true"></i>+505 8123-4567</p>
               </div>
             </div>
           </div>

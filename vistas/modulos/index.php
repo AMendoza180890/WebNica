@@ -1,6 +1,10 @@
 <div class="containerheader">
     <div class="row">
         <div class="col-xs-12">
+            <!-- slider anterior
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                -->
             <div id="slides">
                 <div class="slides-container">
                     <div class="item active">
@@ -11,17 +15,8 @@
                                     <div class="col-md-8">
                                         <h1>Nuestro equipo</h1>
                                         <p>
-                                            En medio de la crisis que vive Nicaragua, aprovechar
-                                            las ventajas del mercado digital debe ser prioridad
-                                            para los negocios locales. <br />
-                                            A través de una página web y redes sociales, tu negocio puede crecer
-                                            exponencialmente, llegando a un mercado mucho más
-                                            amplio y de manera permanente, puesto que la red te
-                                            permite estar 24 horas del día a disposición de tus
-                                            clientes. <br />
-                                            Somos un equipo profesional, nuestra pasión por lo que
-                                            hacemos te garantiza un producto de calidad que
-                                            aportará valor a tu negocio.
+                                            En medio de la crisis que vive Nicaragua, aprovechar las ventajas del mercado digital debe ser prioridad para los negocios locales. A través de una página web y redes sociales,  
+                                            tu negocio puede crecer exponencialmente, llegando a un mercado mucho más amplio y de manera permanente, puesto que la red te permite estar 24 horas del día a disposición de tus clientes. 
                                         </p>
                                         <a href="#abtUs" title="" class="btn btn-lg btn-primary">Leer más</a>
                                     </div>
@@ -38,14 +33,8 @@
                                     <div class="col-md-8">
                                         <h1>Creamos la página web adecuada para tu negocio</h1>
                                         <p>
-                                            Existen muchas formas de aprovechar la web, eso depende
-                                            de los objetivos de tu negocio o tu público meta.
-                                            <br />
-                                            En Web-Nica te ofrecemos una variedad de recursos que
-                                            se adaptan a tus necesidades. <br />
-                                            Es importante que recordar, que los negocios que no
-                                            están en la red, no existen para los miles de usuarios
-                                            que utilizan internet todos los días.
+                                            Existen muchas formas de aprovechar la web, eso depende de los objetivos de tu negocio o tu público meta. 
+                                            En Web-Nica te ofrecemos una variedad de recursos que se adaptan a tus necesidades. 
                                         </p>
                                         <a href="index.php?ruta=about" title="" class="btn btn-lg btn-primary">Leer más</a>
                                     </div>
@@ -62,11 +51,7 @@
                                     <div class="col-md-8">
                                         <h1>5 beneficios de crear una página web para tu negocio</h1>
                                         <p>
-                                            Una página web acerca tu negocio al lugar donde están
-                                            tus clientes, lo hace de una forma sencilla y amigable
-                                            por usar tecnología y accesibilidad. <br> Son muchas las
-                                            ventajas de una página web para tu negocio, aquí te
-                                            presentamos las 5 más importantes.
+                                           Son muchas las ventajas de una página web para tu negocio, aquí te presentamos las 5 más importantes. 
                                         </p>
                                         <a href="index.php?ruta=components" title="" class="btn btn-lg btn-primary">Leer más</a>
                                     </div>
@@ -76,6 +61,13 @@
                     </div>
                 </div>
             </div>
+            <!-- slider anterior
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+            -->
         </div>
     </div>
 </div>
@@ -88,19 +80,9 @@
             <div class="col-md-12 section-container-spacer">
                 <div class="text-justify">
                     <h2 class="text-center">Nuestro Equipo</h2>
-                    <p class="noto">En Web-Nica creemos que en la web está el futuro de los negocios que
-                        aspiran a adaptarse a un mundo interconectado por el internet y las redes sociales. Es una realidad la
-                        afirmación que asevera “si tu negocio no está en la red, no existe”, porque tus clientes y consumidores,
-                        pasan gran parte de su tiempo navegando en internet.</p>
+                    <p class="noto">En Web-Nica creemos que en la web y las redes sociales, está el futuro de los negocios que aspiran a adaptarse a un mundo interconectado por el internet. Es una realidad la afirmación que asevera “si tu negocio no está en la red, no existe”, porque tus clientes y consumidores, pasan gran parte de su tiempo navegando en internet. </p>
 
-                    <p class="noto">Nuestra principal motivación es ayudar a que crezcan los negocios de nuestros clientes. En medio de una
-                        economía mermada por la situación sociopolítica del país, aprovechar las ventajas del mercadeo digital a
-                        través de una página web y redes sociales, para dar a conocer tu negocio a nuevos mercados, mejora la atención al cliente,
-                        puesto que se ofrece un servicio de información durante 24 horas, al alcance de un click para tus clientes
-                        potenciales.</p>
-
-                    <p class="noto">Somos un equipo profesional, nuestra pasión por lo que hacemos te garantiza un producto de calidad que
-                        aportará valor a tu negocio.</p>
+                    <p class="noto">Nuestra  motivación es ayudar a que crezcan los negocios de nuestros clientes. Somos un equipo profesional, nuestra pasión por lo que hacemos te garantiza un producto de calidad que aportará valor a tu negocio.</p>
                 </div>
             </div>
             <?php

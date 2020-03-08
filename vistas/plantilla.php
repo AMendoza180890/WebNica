@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159948149-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159948149-1');
+</script>
+<!-- End google Analytics-->
+<!--start metas to page website-->
     <meta charset="UTF-8"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />

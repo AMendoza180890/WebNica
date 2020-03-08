@@ -21,6 +21,9 @@
     url("../font/cecce625abed4e2df5388b839ca0e5b1.svg#Gothic BT W03 It") format("svg");
     /* iOS 4.1- */
 }
+.colorWhite{	
+    color:#ffffff;
+}
 
 @font-face {
     font-family: NewsGothicBT;
@@ -380,7 +383,7 @@ html {
 body {
     font-family: NewsGothicBT !important;
     /*Fira Sans, Helvetica, Arial, sans-serif;*/
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.81;
     color: #555;
     background-color: #fff

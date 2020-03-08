@@ -38,7 +38,7 @@
             </li>
 
             <li>
-                <a href="usuarios"><i class="fa fa-home"></i>
+                <a href="usuarios"><i class="fa fa-user"></i>
                     <span>Usuarios</span></a>
             </li>
         </ul>

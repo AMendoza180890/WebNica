@@ -1,6 +1,7 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,22 +40,22 @@
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini login-page">
-        <?php
-        if (isset($_SESSION["Ingreso"]) && $_SESSION["Ingreso"] == true) {
-            echo '<div class="wrapper">';
-            include 'vistas/modulos/header.php';
-            include 'vistas/modulos/menu.php';
-            if (isset($_GET["url"])) {
-                if ($_GET["url"] == "inicio" || $_GET["url"] == "ingreso" || $_GET["url"] == "salir" || $_GET["url"] == "usuarios") {
-                    include 'vistas/modulos/'.$_GET["url"].'.php';
-                }
-            } else {
-                include 'vistas/modulos/inicio.php';
-            } 
-            echo '</div>';
-        }else {
-            include 'vistas/modulos/ingreso.php';
-        }?>
+    <?php
+    if (isset($_SESSION["Ingreso"]) && $_SESSION["Ingreso"] == true) {
+        echo '<div class="wrapper">';
+        include 'vistas/modulos/header.php';
+        include 'vistas/modulos/menu.php';
+        if (isset($_GET["ruta"])) {
+            if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "ingreso" || $_GET["ruta"] == "salir" || $_GET["ruta"] == "usuarios") {
+                include 'vistas/modulos/' . $_GET["ruta"] . '.php';
+            }
+        } else {
+            include 'vistas/modulos/inicio.php';
+        }
+        echo '</div>';
+    } else {
+        include 'vistas/modulos/ingreso.php';
+    } ?>
     <!-- jQuery 3 -->
     <script src="vistas/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
@@ -87,6 +88,8 @@
     <script src="vistas/dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="vistas/dist/js/demo.js"></script>
+    <!--util para obtener informacion de usuarios-->
+    <script src="vistas/js/usuarios.js"></script>
 </body>
 
 </html>
