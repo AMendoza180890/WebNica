@@ -46,7 +46,7 @@
         include 'vistas/modulos/header.php';
         include 'vistas/modulos/menu.php';
         if (isset($_GET["ruta"])) {
-            if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "ingreso" || $_GET["ruta"] == "salir" || $_GET["ruta"] == "usuarios") {
+            if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "ingreso" || $_GET["ruta"] == "salir" || $_GET["ruta"] == "usuarios" || $_GET["ruta"] == "perfil" || $_GET["ruta"] == "slide") {
                 include 'vistas/modulos/' . $_GET["ruta"] . '.php';
             }
         } else {

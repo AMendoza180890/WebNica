@@ -21,8 +21,9 @@
     url("../font/cecce625abed4e2df5388b839ca0e5b1.svg#Gothic BT W03 It") format("svg");
     /* iOS 4.1- */
 }
-.colorWhite{	
-    color:#ffffff;
+
+.colorWhite {
+    color: #ffffff;
 }
 
 @font-face {
@@ -5626,7 +5627,7 @@ body {
 }
 
 .fa-icon {
-    color: #000;
+    color: #ffffff;
     width: 32px;
     height: 32px;
     line-height: 32px;
@@ -5634,7 +5635,7 @@ body {
     text-align: center;
     display: inline-block;
     border-radius: 60px;
-    box-shadow: 0 0 2px #888
+    box-shadow: 0 0 2px rgb(255, 255, 255)
 }
 
 .fa-icon .fa {

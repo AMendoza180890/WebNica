@@ -13,7 +13,7 @@
             <div class="col-md-4">
                 <h4 class="colorWhite">Te gustó? Compartilo!</h4>
                 <p>
-                    <a href="https://www.facebook.com/Web-nica-110732237194625" class="social-round-icon white-round-icon fa-icon" title="">
+                    <a href="https://www.facebook.com/Web-nica-110732237194625" class="social-round-icon fa-icon" title="">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                     <a href="https://instagram.com/web_nica/" class="social-round-icon white-round-icon fa-icon" title="">

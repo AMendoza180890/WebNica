@@ -32,7 +32,7 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                     <div class="pull-left">
-                        <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                        <a href="perfil" class="btn btn-default btn-flat">Perfil</a>
                     </div>
                     <div class="pull-right">
                         <a href="salir" class="btn btn-danger btn-flat">Salir</a>

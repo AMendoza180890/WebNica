@@ -8,32 +8,32 @@
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-home"></i>
+                <a href="slide"><i class="fa fa-image"></i>
                     <span>Slide</span></a>
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-home"></i>
+                <a href="#"><i class="fa fa-edit"></i>
                     <span>Nuestros Servicios</span></a>
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-home"></i>
+                <a href="#"><i class="fa fa-align-left"></i>
                     <span>Blog</span></a>
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-home"></i>
+                <a href="#"><i class="fa fa-address-book"></i>
                     <span>Contactos</span></a>
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-home"></i>
+                <a href="#"><i class="fa fa-archive"></i>
                     <span>Mensajes</span></a>
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-home"></i>
+                <a href="#"><i class="fa fa-address-card"></i>
                     <span>Suscriptores</span></a>
             </li>
 

@@ -4,7 +4,7 @@
         public function CrearUsuarioM($tablabd, $datosC){
             try {
                 $con = new ConexionBD;
-                $pdo = $con->cBD()->prepare("INSERT INTO $tablabd (CatEmpId, CatUsuario, CatPass, CatRol, CatUsuFoto) VALUES (:CatEmpId,:CatUsuario, :CatPass, :CatRol, :CatUsuFoto)");
+                $pdo = $con->cBD()->prepare("INSERT INTO $tablabd (CatEmpId, CatUsuario, CatPass, CatRol, CatUsuFoto, CatUsuEstado) VALUES (:CatEmpId,:CatUsuario, :CatPass, :CatRol, :CatUsuFoto, 1)");
                 $pdo    ->  bindParam(":CatEmpId", $datosC["CatEmpId"],pdo::PARAM_STR);
                 $pdo    ->  bindParam(":CatUsuario", $datosC["CatUsuario"], pdo::PARAM_STR);
                 $pdo    ->  bindParam(":CatPass", $datosC["CatPass"], pdo::PARAM_STR);

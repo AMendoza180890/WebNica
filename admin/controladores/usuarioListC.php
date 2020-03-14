@@ -15,7 +15,7 @@ class UsersList{
                 echo '<td>' . $value["catrolnombre"] . '</td>
                     <td>
                         <div class="btn-group">
-                            <button class="btn btn-success"><i class="fa fa-pencil"></i></button>
+                            <button class="btn btn-success EditarU" CatUsuId="'. $value["CatUsuId"].'"><i class="fa fa-pencil" data-toggle="modal" data-target="#EditarU"></i></button>
                             <button class="btn btn-danger BorrarU" CatUsuId="'. $value["CatUsuId"]. '"CatUsuFoto="'. $value["CatUsuFoto"].'"><i class="fa fa-times"></i></button>
                         </div>
                     </td> 

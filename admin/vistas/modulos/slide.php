@@ -42,8 +42,8 @@
                             $item = null;
                             $valor = null;
 
-                            $UdtUser = UpdateUserC::UpdateInfoUserC($item,$valor);
-                        ?>
+                            $UdtUser = UpdateUserC::UpdateInfoUserC($item, $valor);
+                            ?>
                      </tbody>
                  </table>
              </div>
