@@ -34,10 +34,6 @@
                     <button type="submit" class="btn btn-primary">Guardar</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
                 </div>
-                <?php
-                $ActualizarU = new UpdateUserC();
-                $ActualizarU->UpdateUC();
-                ?>
             </form>
         </div>
     </div>

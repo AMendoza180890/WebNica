@@ -36,15 +36,11 @@
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                 </div>
                 <?php
-                /*$CUsuarios = new UsuarioCrearC();
-                $CUsuarios->CreateUsers();*/
+                    $crearS = new SlideC();
+                    $crearS -> CrearSlideC();
                 ?>
             </form>
         </div>
     </div>
 </div>
-<?php
-$borrarU = new BorrarUser();
-$borrarU->BorrarUserC();
-?>
 <?php include 'vistas/modulos/ActualizarSlider.php'; ?>

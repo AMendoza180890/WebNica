@@ -5,16 +5,12 @@
              Gestor de Sliders
          </h1>
      </section>
-
      <!-- Main content -->
      <section class="content">
-
          <!-- Default box -->
          <div class="box">
              <div class="box-header with-border">
-
                  <button class="btn btn-primary" data-toggle="modal" data-target="#CrearSlider">Crear Imagen</button>
-
                  <div class="box-tools pull-right">
                      <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
                          <i class="fa fa-minus"></i></button>
