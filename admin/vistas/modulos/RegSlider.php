@@ -43,4 +43,4 @@
         </div>
     </div>
 </div>
-<?php include 'vistas/modulos/ActualizarSlider.php'; ?>
+<?php //include 'vistas/modulos/ActualizarSlider.php'; ?>
