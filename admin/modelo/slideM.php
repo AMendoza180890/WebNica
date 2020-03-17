@@ -20,5 +20,26 @@ class SlideM extends ConexionBD{
             mensajes::error($ex);
         }
     }
+
+    // ver slide 
+    public static function VerSlideM($item, $valor){
+        try {
+            if ($item != null) {
+                $cn = new ConexionBD;
+                $pdo = $cn->cBD()->prepare("SELECT * FROM catslide WHERE $item = :$item");
+                $pdo -> bindParam(":".$item,$valor,PDO::PARAM_INT);
+                $pdo->execute();
+                return $pdo->fetch();
+            }else {
+                $cn = new ConexionBD;
+                $pdo = $cn->cBD()->prepare("SELECT * FROM catslide ORDER BY orden ASC");
+                $pdo -> execute();
+                return $pdo -> fetchAll();
+            }
+        } catch (exception $ex) {
+            mensajes::error($ex);
+        }
+
+    }
 }
 ?>

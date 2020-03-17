@@ -31,19 +31,28 @@
                          </tr>
                      </thead>
                      <tbody>
-                         <tr>
-                             <td>1</td>
-                             <td><img src="vistas/img/usuarios/default.png" class="img-thumbnail" width="300px" alt=""></td>
-                             <td>Titulo de la publicacion</td>
-                             <td>Descripcion de la publicacion en pagina web</td>
-                             <td>1</td>
+
+                     <?php
+                        $item = null;
+                        $valor = null;
+                        $verS = SlideC::VerSlideC($item,$valor);
+
+                        foreach ($verS as $key => $value) {
+                           echo ' <tr>
+                             <td>'.($key + 1).'</td>
+                             <td><img src="'.$value["imagen"].'" class="img-thumbnail" width="300px" alt=""></td>
+                             <td>'.$value["titular"].'</td>
+                             <td>'.$value["descripcion"].'</td>
+                             <td><h1>'.$value["orden"].'</h1></td>
                              <td>
                                  <div class="btn-group">
-                                     <button class="btn btn-success" data-toggle="modal" data-target="#EditarS"><i class="fa fa-pencil"></i></button>
+                                     <button class="btn btn-success EditarSlide" Sid="'.$value["id"].'" data-toggle="modal" data-target="#EditarS"><i class="fa fa-pencil"></i></button>
                                      <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                                  </div>
                              </td>
-                         </tr>
+                         </tr>'; 
+                        }
+                     ?>
                      </tbody>
                  </table>
              </div>

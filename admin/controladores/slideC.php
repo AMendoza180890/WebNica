@@ -21,5 +21,14 @@ class SlideC{
             mensajes::error($ex);
         }
     }
+    //ver slide en tabla
+    public static function VerSlideC($item, $valor){
+        try {
+            $respuesta = slideM::VerSlideM($item, $valor);
+            return $respuesta;
+        } catch (Exception $ex) {
+            mensajes::error($ex);
+        }
+    }
 }
 ?>
