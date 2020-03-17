@@ -13,7 +13,7 @@
                   </div>
                   <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
               </form>
-
 <?php
     $contacto = new contaC();
     $contacto -> contactInsert();
+?>

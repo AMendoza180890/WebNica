@@ -5,15 +5,28 @@ class RutasControlador{
     }
 
     public function Rutas(){
-        if (isset($_GET['ruta'])) {
-            $rutas = $_GET['ruta'];
-        }else {
-            $rutas='index';
-        }
+        try {
+            if (isset($_GET['ruta'])) {
+                $rutas = $_GET['ruta'];
+            }else {
+                $rutas='index';
+            }
+            $sourse = 'catpaginas';
+            $respuesta = Modelo::RutasModelo($rutas,$sourse);          
+            include $respuesta;
+        } catch (Exception $ex) {
+            mensajes::error($ex);
+        }     
+    }
 
-        $respuesta = Modelo::RutasModelo($rutas);
-        
-        include $respuesta;
+    public function siteWebPageLoad(){
+        try{
+            $sourse = 'catpaginas';
+                $pagLoad = Modelo::webPage($sourse);
+                return $pagLoad;
+        }catch(Exception $ex){
+            mensajes::error($ex);
+        }
     }
 }
 ?>

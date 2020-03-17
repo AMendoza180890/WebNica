@@ -2,7 +2,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <div id="map"></div>
+          <img class="img-responsive" src="vistas/assets/images/Paginaweb-02.jpg" alt="Contactenos-Art-Luci">
         </div>
         <div class="col-xs-12">
 
@@ -10,19 +10,15 @@
             <!--formulario-->
             <div class="col-md-6">
               <?php
-                include 'contactForm.php';
+              include 'contactForm.php';
               ?>
             </div>
-
             <!--panel derecho-->
             <div class="col-md-5 col-md-offset-1">
 
               <h3>Escríbenos y con gusto te atenderemos</h3>
               <div>
-                <p>42 rue Rouelle <br />75015 Paris FRANCE</p>
-              </div>
-              <div>
-                <p>contact@mybusiness.com<br>+331 45 31 64 32</p>
+                <p>info@web-nica.com<br><i class="fa fa-whatsapp" aria-hidden="true"></i>+505 8979-2462</p>
               </div>
             </div>
           </div>

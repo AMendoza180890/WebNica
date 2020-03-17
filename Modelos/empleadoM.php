@@ -1,10 +1,10 @@
 <?php
 include_once 'conexionBD.php';
 
-class empleadoM extends ConexionBD{
+class empleadoM extends ConBD{
     public static function empleadoModelo(){
         try {
-            $conec = new ConexionBD();
+            $conec = new ConBD();
             $emp = $conec->cBD()->prepare("SELECT * FROM catempleado WHERE CatEmpEstado = 1");
             $emp -> execute();
             while($array = $emp->fetchObject(__CLASS__)){

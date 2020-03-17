@@ -11,7 +11,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 @font-face {
-    font-family: NewsGothicBT;
+    font-family: NewsGothicBT_old;
     src: url("../font/cecce625abed4e2df5388b839ca0e5b1.eot");
     /* IE9*/
     src: url("../font/cecce625abed4e2df5388b839ca0e5b1.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
@@ -22,9 +22,32 @@
     /* iOS 4.1- */
 }
 
+.colorWhite {
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: NewsGothicBT;
+    src: url(../font/NewGotBd.ttf);
+    /* iOS 4.1- */
+}
+
 @font-face {
     font-family: cherishing_moments;
     src: url(../font/Cherishing_Moments.ttf);
+}
+
+@font-face {
+    font-family: NewsGothBTBold;
+    src: url(../font/NewsGothicBoldBT.ttf);
+}
+
+.noto {
+    font-family: 'Noto Sans' !important;
+}
+
+.boldText {
+    font-family: NewsGothBTBold !important;
 }
 
 html {
@@ -361,7 +384,7 @@ html {
 body {
     font-family: NewsGothicBT !important;
     /*Fira Sans, Helvetica, Arial, sans-serif;*/
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.81;
     color: #555;
     background-color: #fff
@@ -472,7 +495,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans';
     /*inherit;*/
     font-weight: 500;
     line-height: 1.1;
@@ -4209,7 +4232,7 @@ tbody.collapse.in {
 }
 
 .navbar-toggle:focus {
-    outline: 0
+    outline: 0;
 }
 
 .navbar-toggle .icon-bar {
@@ -5264,7 +5287,7 @@ button.close {
 @media (min-width: 360px) and (max-width:750px) {
     .background-image-container-md {
         position: relative;
-        background-size: cover;
+        background-size: cover !important;
         background-repeat: no-repeat;
         background-position: top;
         padding: 12% 0;
@@ -5275,7 +5298,7 @@ button.close {
 @media screen and (max-width: 900px) {
     .background-image-container-md {
         position: relative;
-        background-size: cover;
+        background-size: cover auto !important;
         background-repeat: no-repeat;
         background-position: top;
         padding: 12% 0;
@@ -5526,6 +5549,10 @@ body {
     padding: 60px 0
 }
 
+.section-containerAll {
+    padding: 8.5% 0
+}
+
 .section-container.no-padding {
     padding-top: 0
 }
@@ -5548,6 +5575,11 @@ body {
     padding: 60px 0
 }
 
+.background-color-containerOrange {
+    background-color: #e84e1b;
+    padding: 60px 0
+}
+
 .border-section-container {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee
@@ -5566,7 +5598,7 @@ body {
 .background-image-container {
     position: relative;
     background-color: #1d71b7;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top;
     padding: 12% 0;
@@ -5595,7 +5627,7 @@ body {
 }
 
 .fa-icon {
-    color: #000;
+    color: #ffffff;
     width: 32px;
     height: 32px;
     line-height: 32px;
@@ -5603,7 +5635,7 @@ body {
     text-align: center;
     display: inline-block;
     border-radius: 60px;
-    box-shadow: 0 0 2px #888
+    box-shadow: 0 0 2px rgb(255, 255, 255)
 }
 
 .fa-icon .fa {

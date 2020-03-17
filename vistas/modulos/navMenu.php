@@ -29,13 +29,20 @@
 
         <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php?ruta=index" title="" class="active">Home</a></li>
+            <?php
+                $pagina =  new RutasControlador();
+                $pagLoad = $pagina->siteWebPageLoad();
+                
+                for ($i=0; $i < count($pagLoad) ; $i++) { 
+                    echo '<li><a href="index.php?ruta='.$pagLoad[$i]->CatPagNombre.'" title="" class="active">'.$pagLoad[$i]->CatPagEtiqueta.'</a></li>';
+                }?>
+            <!--<li><a href="index.php?ruta=index" title="" class="active">Home</a></li>
                 <li><a href="index.php?ruta=about" title="">Nuestros Servicios</a></li>
                 <li><a href="index.php?ruta=components" title="">Educación Web</a></li>
                 <li class=""><a href="index.php?ruta=contact" title="">Contactos</a></li>
                 <li class="enable">
                     <a href="index.php?ruta=pricing" title=""> Pricing </a>
-                </li>
+                </li>-->
                 <li>
                     <p>
                         <a href="./download.html" class="btn btn-primary navbar-btn enable" title="">Download</a>

@@ -1,11 +1,11 @@
 <?php
 require_once 'conexionBD.php';
 
-class AdminM extends ConexionBD{
+class AdminM extends ConBD{
 
     public function IngresoM($datosC, $tabla){
         try {
-            $conec = new ConexionBD;
+            $conec = new ConBD;
             $pdo = $conec->cBD()->prepare("SELECT CatUsuario, CatPass FROM $tabla WHERE CatUsuario = :usuario AND CatPass = :passw");
             $pdo    ->  bindParam(":usuario",   $datosC['Usuario'],     PDO::PARAM_STR);
             $pdo    ->  bindParam(":passw",     $datosC['password'],     PDO::PARAM_STR);
