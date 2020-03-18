@@ -43,7 +43,7 @@
                              <td><img src="'.$value["imagen"].'" class="img-thumbnail" width="300px" alt=""></td>
                              <td>'.$value["titular"].'</td>
                              <td>'.$value["descripcion"].'</td>
-                             <td><h1>'.$value["orden"].'</h1></td>
+                             <td><h1>'.$value["orden"]. '</h1></td>
                              <td>
                                  <div class="btn-group">
                                      <button class="btn btn-success EditarSlide" Sid="'.$value["id"].'" data-toggle="modal" data-target="#EditarS"><i class="fa fa-pencil"></i></button>

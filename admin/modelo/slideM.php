@@ -3,7 +3,7 @@ require_once 'ConexionBD.php';
 class SlideM extends ConexionBD{
     public static function CrearSlideM($datosC){
         try {
-            $cn = new ConexionBD;
+            $cn = new ConexionBD();
             $pdo = $cn->cBD()->prepare("INSERT INTO catslide (titular, descripcion, orden, imagen) VALUES (:titular, :descripcion, :orden, :imagen)");
     
             $pdo ->bindParam(":titular", $datosC["titular"],PDO::PARAM_STR);
@@ -25,13 +25,13 @@ class SlideM extends ConexionBD{
     public static function VerSlideM($item, $valor){
         try {
             if ($item != null) {
-                $cn = new ConexionBD;
+                $cn = new ConexionBD();
                 $pdo = $cn->cBD()->prepare("SELECT * FROM catslide WHERE $item = :$item");
                 $pdo -> bindParam(":".$item,$valor,PDO::PARAM_INT);
                 $pdo->execute();
                 return $pdo->fetch();
             }else {
-                $cn = new ConexionBD;
+                $cn = new ConexionBD();
                 $pdo = $cn->cBD()->prepare("SELECT * FROM catslide ORDER BY orden ASC");
                 $pdo -> execute();
                 return $pdo -> fetchAll();

@@ -1,5 +1,5 @@
 $(".TB").on("click", ".EditarSlide", function() {
-    var Sid = $(this).Attr("Sid");
+    var Sid = $(this).attr("Sid");
     var datos = new FormData();
 
     datos.append("Sid", Sid);
@@ -17,9 +17,9 @@ $(".TB").on("click", ".EditarSlide", function() {
             $("#imagenActual").val(respuesta["imagen"]);
 
             if (respuesta["imagen"] != "") {
-                $(".visor").Attr("src", respuesta["imagen"]);
+                $(".visor").attr("src", respuesta["imagen"]);
             } else {
-                $(".visor").Attr("src", "vistas/img/usuarios/default.png");
+                $(".visor").attr("src", "vistas/img/usuarios/default.png");
             }
             $("#titularE").val(respuesta["titular"]);
             $("#descripcionE").val(respuesta["descripcion"]);

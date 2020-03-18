@@ -12,10 +12,9 @@
         }
     }
 
-    if (isset($_POST["id"])) {
-        echo '<script>alert("llega hasta aqui")</script>';
+    if (isset($_POST["Sid"])) {
         $editar = new SlideA();
-        $editar -> Sid = $_POST["id"];
+        $editar -> Sid = $_POST["Sid"];
         $editar -> EditarSlideA();
     }
 ?>
