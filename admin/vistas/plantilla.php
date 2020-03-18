@@ -92,6 +92,7 @@
     <script src="vistas/dist/js/demo.js"></script>
     <!--util para obtener informacion de usuarios-->
     <script src="vistas/js/usuarios.js"></script>
+    <!--Se obtiene informacion de la base de datos y se carga en el formuario slide-->
     <script src="vistas/js/slide.js"></script>
 </body>
 

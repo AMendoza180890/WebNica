@@ -30,5 +30,32 @@ class SlideC{
             mensajes::error($ex);
         }
     }
+
+    // Actualizar Slide
+    public function ActualizarSlideC(){
+        if (isset($_POST["Sid"])) {
+            $rutaImg = $_POST["imagenActual"];
+            if (isset($_FILES["imagenE"]["tmp_name"]) && !empty($_FILES["imagenE"]["tmp_name"])) {
+                if (!empty($_POST["imagenActual"])) {
+                    unlink($_POST["imagenActual"]);
+                }else {
+                    mkdir($direc,0755);
+                }
+                if ($_FILES["imagenE"]) {
+                    $rutaImg = EditImgSlide::imgEditar("imagenE");
+                }
+            }
+
+            $datosC = array('id' => $_POST["Sid"] , 'titular'=> $_POST["titularE"], 'descripcion' => $_POST["descripcionE"], 'orden'=> $_POST["ordenE"],'imagen'=>$rutaImg);
+
+            $respuesta = SlideM::ActualizarSlideM($datosC);
+
+            if ($respuesta == true) {
+                echo '<script>window.location = "slide"</script>';
+            }else {
+                echo 'Error intente luego';
+            }
+        }
+    }
 }
 ?>
