@@ -11,11 +11,11 @@
                         <div class="form-group">
                             <h2>Titular:</h2>
                             <input type="text" class="form-control input-lg" id="titularE" name="titularE" require>
-                            <input type="hidden" id="SId" name="SId">
+                            <input type="hidden" id="Sid" name="Sid">
                         </div>
                         <div class="form-group">
                             <h2>Descripcion:</h2>
-                            <textarea id="descripcionE" name="descripcionE" id="" cols="30" rows="10"></textarea>
+                            <textarea id="descripcionE" name="descripcionE" cols="30" rows="10"></textarea>
                         </div>
                         <div class="form-group">
                             <h2>Orden:</h2>
@@ -34,6 +34,10 @@
                     <button type="submit" class="btn btn-primary">Guardar</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
                 </div>
+                <?php
+                    $actualizarS = new SlideC();
+                    $actualizarS->ActualizarSlideC();
+                ?>
             </form>
         </div>
     </div>

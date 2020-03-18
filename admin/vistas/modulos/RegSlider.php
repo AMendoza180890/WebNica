@@ -43,4 +43,8 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 <?php include 'vistas/modulos/ActualizarSlider.php'; ?>
+=======
+<?php include 'vistas/modulos/ActualizarSlider.php';?>
+>>>>>>> 346240d5c57b8cc3a9ad75dba8dfebed4fda2f62
