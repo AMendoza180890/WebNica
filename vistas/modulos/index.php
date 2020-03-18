@@ -1,73 +1,9 @@
 <div class="containerheader">
     <div class="row">
         <div class="col-xs-12">
-            <!-- slider anterior
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                -->
-            <div id="slides">
-                <div class="slides-container">
-                    <div class="item active">
-                        <div class="white-text-container background-image-container background-image-container-md slide1" style="background-image: url('vistas/assets/images/SlidersWeb-01.jpg')">
-                            <div class="opacity"></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <h1>Nuestro equipo</h1>
-                                        <p>
-                                            En medio de la crisis que vive Nicaragua, aprovechar las ventajas del mercado digital debe ser prioridad para los negocios locales. A través de una página web y redes sociales,  
-                                            tu negocio puede crecer exponencialmente, llegando a un mercado mucho más amplio y de manera permanente, puesto que la red te permite estar 24 horas del día a disposición de tus clientes. 
-                                        </p>
-                                        <a href="#abtUs" title="" class="btn btn-lg btn-primary">Leer más</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="white-text-container background-image-container background-image-container-md slide2" style="background-image: url('vistas/assets/images/SlidersWeb-02.jpg')">
-                            <div class="opacity"></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <h1>Creamos la página web adecuada para tu negocio</h1>
-                                        <p>
-                                            Existen muchas formas de aprovechar la web, eso depende de los objetivos de tu negocio o tu público meta. 
-                                            En Web-Nica te ofrecemos una variedad de recursos que se adaptan a tus necesidades. 
-                                        </p>
-                                        <a href="index.php?ruta=about" title="" class="btn btn-lg btn-primary">Leer más</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <?php include 'vistas/modulos/slide.php';?>
 
-                    <div class="item">
-                        <div class="white-text-container background-image-container background-image-container-md slide3" style="background-image: url('vistas/assets/images/SlidersWeb-03.jpg')">
-                            <div class="opacity"></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <h1>5 beneficios de crear una página web para tu negocio</h1>
-                                        <p>
-                                           Son muchas las ventajas de una página web para tu negocio, aquí te presentamos las 5 más importantes. 
-                                        </p>
-                                        <a href="index.php?ruta=components" title="" class="btn btn-lg btn-primary">Leer más</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- slider anterior
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-            -->
         </div>
     </div>
 </div>

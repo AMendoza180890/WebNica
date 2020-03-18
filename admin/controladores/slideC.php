@@ -7,7 +7,7 @@ class SlideC{
                 if (isset($_FILES["imagenN"]["tmp_name"]) && !empty($_FILES["imagenN"]["tmp_name"])) {
                    $rutaImg = EditImgSlide::imgEditar("imagenN");
                 }
-                $datosC = array('titular' => $_POST["titularN"], 'descripcion' => $_POST["descripcionN"], 'orden'=>$_POST["ordenN"], 'imagen'=>$rutaImg);
+                $datosC = array('titular' => $_POST["titularN"], 'descripcion' => $_POST["descripcionN"], 'urlPag' => $_POST["urlPagN"], 'orden'=>$_POST["ordenN"], 'imagen'=>$rutaImg);
     
                 $respuesta = SlideM::CrearSlideM($datosC);
     
@@ -46,12 +46,28 @@ class SlideC{
                 }
             }
 
-            $datosC = array('id' => $_POST["Sid"] , 'titular'=> $_POST["titularE"], 'descripcion' => $_POST["descripcionE"], 'orden'=> $_POST["ordenE"],'imagen'=>$rutaImg);
+            $datosC = array('id' => $_POST["Sid"] , 'titular'=> $_POST["titularE"], 'descripcion' => $_POST["descripcionE"],'urlPag' => $_POST["urlPagE"], 'orden'=> $_POST["ordenE"],'imagen'=>$rutaImg);
 
             $respuesta = SlideM::ActualizarSlideM($datosC);
 
             if ($respuesta == true) {
                 echo '<script>window.location = "slide"</script>';
+            }else {
+                echo 'Error intente luego';
+            }
+        }
+    }
+
+    // Borrar Slide
+    public function BorrarSlideC(){
+        if (isset($_GET["Sid"])) {
+            $id = $_GET["Sid"];
+            if ($_GET["imagenSlide"] != "") {
+                unlink($_GET["imagenSlide"]);
+            }
+            $respuesta = SlideM::BorrarSlideM($id);
+            if ($respuesta == true) {
+                echo '<script>window.location = "slide";</script>';
             }else {
                 echo 'Error intente luego';
             }

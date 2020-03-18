@@ -18,6 +18,10 @@
                             <textarea id="descripcionE" name="descripcionE" cols="30" rows="10"></textarea>
                         </div>
                         <div class="form-group">
+                            <h2>URL:</h2>
+                            <input type="text" class="form-control input-lg" id="urlPagE" name="urlPagE" >
+                        </div>
+                        <div class="form-group">
                             <h2>Orden:</h2>
                             <input type="text" class="form-control input-lg" id="ordenE" name="ordenE" require>
                         </div>
@@ -42,3 +46,8 @@
         </div>
     </div>
 </div>
+
+<?php
+$BorrarS = new SlideC();
+$BorrarS ->BorrarSlideC();
+?>

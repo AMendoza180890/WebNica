@@ -1,3 +1,4 @@
+// Datos para editar Slide
 $(".TB").on("click", ".EditarSlide", function() {
     var Sid = $(this).attr("Sid");
     var datos = new FormData();
@@ -23,7 +24,16 @@ $(".TB").on("click", ".EditarSlide", function() {
             }
             $("#titularE").val(respuesta["titular"]);
             $("#descripcionE").val(respuesta["descripcion"]);
+            $("#urlPagE").val(respuesta["urlPag"]);
             $("#ordenE").val(respuesta["orden"]);
         }
     })
+})
+
+//Borrar Slide
+$(".TB").on("click",".BorrarSlide", function(){
+    var Sid = $(this).attr("Sid");
+    var imagenSlide = $(this).attr("imagenSlide");
+
+    window.location = 'index.php?ruta=slide&Sid='+Sid+'$imagenSlide='+imagenSlide;
 })

@@ -20,6 +20,11 @@
                         </div>
 
                         <div class="form-group">
+                            <h2>URL:</h2>
+                            <input type="text" class="form-control input-lg" name="urlPagN">
+                        </div>
+
+                        <div class="form-group">
                             <h2>Orden:</h2>
                             <input type="text" class="form-control input-lg" name="ordenN">
                         </div>
