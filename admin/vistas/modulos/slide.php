@@ -2,20 +2,7 @@
      <!-- Content Header (Page header) -->
      <section class="content-header">
          <h1>
-             Gestor de usuarios
-         </h1>
-     </section>
-
-     <!-- Main content -->
-     <section class="content">
-
-         <!-- Default box -->
-         <div class="box">
-             <div class="box-header with-border">
-
-                 <button class="btn btn-primary" data-toggle="modal" data-target="#CrearUsuarios">Crear</button>
-
-             Gestor de Sliders
+             Gestor de Slide
          </h1>
      </section>
      <!-- Main content -->
