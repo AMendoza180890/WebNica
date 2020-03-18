@@ -13,11 +13,7 @@
             <div class="col-md-4">
                 <h4 class="colorWhite">Te gustó? Compartilo!</h4>
                 <p>
-<<<<<<< HEAD
-                    <a href="https://www.facebook.com/Web-nica-110732237194625" class="social-round-icon white-round-icon fa-icon" title="">
-=======
                     <a href="https://www.facebook.com/Web-nica-110732237194625" class="social-round-icon fa-icon" title="">
->>>>>>> a681ad489f4011fdf3d3e3e39d8e795164ee31b8
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                     <a href="https://instagram.com/web_nica/" class="social-round-icon white-round-icon fa-icon" title="">
@@ -29,7 +25,7 @@
                 </p>
                 <p>
                     <small class="colorWhite">© Website creado por
-                        <a class="class="colorWhite"" href="http://www.web-nica.com/index.php?ruta=index" class="link-like-text" title="Creado por web-nica.com">Web-Nica</a></small>
+                        <a class="colorWhite" href="http://www.web-nica.com/index.php?ruta=index" class="link-like-text" title="Creado por web-nica.com">Web-Nica</a></small>
                 </p>
             </div>
 

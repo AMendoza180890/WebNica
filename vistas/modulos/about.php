@@ -24,7 +24,7 @@
             <div class="row">
               <div class="col-md-3">
                 <div class="fa-container">
-                  <i class="fa fa-comment-o fa-3x " aria-hidden="true"></i>
+                  <i class="fa fa-at fa-3x" aria-hidden="true"></i>
                 </div>
                 <div class="text-center">
                   <h3>Email Corporativos</h3>
@@ -38,7 +38,7 @@
 
               <div class="col-md-3">
                 <div class="fa-container">
-                  <i class="fa fa-bell-o fa-3x" aria-hidden="true"></i>
+                  <i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>
                 </div>
                 <div class="text-center">
                   <h3>Diseño de línea gráfica </h3>
@@ -52,7 +52,7 @@
 
               <div class="col-md-3">
                 <div class="fa-container">
-                  <i class="fa fa-comment-o fa-3x " aria-hidden="true"></i>
+                  <i class="fa fa-line-chart fa-3x " aria-hidden="true"></i>
                 </div>
                 <div class="text-center">
                   <h3>Google Analytic</h3>
@@ -66,7 +66,7 @@
 
               <div class="col-md-3">
                 <div class="fa-container">
-                  <i class="fa fa-comment-o fa-3x " aria-hidden="true"></i>
+                  <i class="fa fa-newspaper-o fa-3x " aria-hidden="true"></i>
                 </div>
                 <div class="text-center">
                   <h3>Newsletter - mailchimp</h3>
@@ -83,7 +83,7 @@
             <div class="row">
               <div class="col-md-3">
                 <div class="fa-container">
-                  <i class="fa fa-heart-o fa-3x " aria-hidden="true"></i>
+                  <i class="fa fa-edit fa-3x " aria-hidden="true"></i>
                 </div>
                 <div class="text-center">
                   <h3>Creación de contenido</h3>
@@ -97,7 +97,7 @@
 
               <div class="col-md-3">
                 <div class="fa-container">
-                  <i class="fa fa-bell-o fa-3x" aria-hidden="true"></i>
+                  <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
                 </div>
                 <div class="text-center">
                   <h3>Administración de comunidad en redes sociales </h3>
@@ -111,7 +111,7 @@
 
               <div class="col-md-3">
                 <div class="fa-container">
-                  <i class="fa fa-comment-o fa-3x " aria-hidden="true"></i>
+                  <i class="fa fa-globe fa-3x " aria-hidden="true"></i>
                 </div>
                 <div class="text-center">
                   <h3>Creación de páginas web</h3>
@@ -125,7 +125,7 @@
 
               <div class="col-md-3">
                 <div class="fa-container">
-                  <i class="fa fa-comment-o fa-3x " aria-hidden="true"></i>
+                  <i class="fa fa-wrench fa-3x " aria-hidden="true"></i>
                 </div>
                 <div class="text-center">
                   <h3>Mantenimiento de página Web</h3>

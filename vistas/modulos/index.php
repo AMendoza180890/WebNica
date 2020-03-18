@@ -96,7 +96,7 @@
 
                 <div class="col-md-6">
                     <div class="fa-container">
-                        <i class="fa fa-heart-o fa-3x " aria-hidden="true"></i>
+                        <i class="fa fa-user-plus fa-3x " aria-hidden="true"></i>
                     </div>
                     <div class="text-center">
                         <small class="signature cTitle">Integridad</small>
@@ -110,7 +110,7 @@
 
                 <div class="col-md-6">
                     <div class="fa-container">
-                        <i class="fa fa-heart-o fa-3x " aria-hidden="true"></i>
+                        <i class="fa fa-heartbeat fa-3x " aria-hidden="true"></i>
                     </div>
                     <div class="text-center">
                         <small class="signature cTitle">Pasión por lo que hacemos</small>
@@ -126,7 +126,7 @@
                     <div class="col-md-12 section-container-spacer">
                         <div class="col-md-6">
                             <div class="fa-container">
-                                <i class="fa fa-heart-o fa-3x " aria-hidden="true"></i>
+                                <i class="fa fa-handshake-o fa-3x " aria-hidden="true"></i>
                             </div>
                             <div class="text-center">
                                 <small class="signature cTitle">Respeto</small>
@@ -140,7 +140,7 @@
 
                         <div class="col-md-6">
                             <div class="fa-container">
-                                <i class="fa fa-heart-o fa-3x " aria-hidden="true"></i>
+                                <i class="fa fa-group fa-3x " aria-hidden="true"></i>
                             </div>
                             <div class="text-center">
                                 <small class="signature cTitle">Trabajo en equipo</small>
