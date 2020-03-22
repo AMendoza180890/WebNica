@@ -201,3 +201,31 @@ Stack trace:
 [14-Mar-2020 17:50:30 UTC] PHP Warning:  unlink(vistas/img/usuarios/U798.jpg): No such file or directory in /home/marvin/web-nica.com/admin/controladores/ActualizarUserC.php on line 17
 [14-Mar-2020 17:50:52 UTC] PHP Warning:  unlink(vistas/img/usuarios/U798.jpg): No such file or directory in /home/marvin/web-nica.com/admin/controladores/ActualizarUserC.php on line 17
 [14-Mar-2020 17:59:27 UTC] PHP Warning:  unlink(vistas/img/usuarios/U798.jpg): No such file or directory in /home/marvin/web-nica.com/admin/controladores/ActualizarUserC.php on line 17
+[18-Mar-2020 20:49:24 UTC] PHP Fatal error:  Uncaught Error: Class 'mensajes' not found in /home/marvin/web-nica.com/admin/modelo/ConexionBD.php:30
+Stack trace:
+#0 /home/marvin/web-nica.com/admin/modelo/usuarioM.php(8): ConexionBD->cBD()
+#1 /home/marvin/web-nica.com/admin/controladores/usuarioC.php(9): UsuariosM->IngresoUsuarioM(Array)
+#2 /home/marvin/web-nica.com/admin/vistas/modulos/ingreso.php(27): usuarioC->ingresoUsuarioC()
+#3 /home/marvin/web-nica.com/admin/vistas/plantilla.php(59): include('/home/marvin/we...')
+#4 /home/marvin/web-nica.com/admin/controladores/plantillac.php(4): include('/home/marvin/we...')
+#5 /home/marvin/web-nica.com/admin/index.php(26): plantillas->callplantilla()
+#6 {main}
+  thrown in /home/marvin/web-nica.com/admin/modelo/ConexionBD.php on line 30
+[19-Mar-2020 02:25:42 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:25:42 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:25:49 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:25:49 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:13 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:13 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:21 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:21 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:25 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:25 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:48 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:48 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:50 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:50 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:54 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:54 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:56 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
+[19-Mar-2020 02:26:56 UTC] PHP Notice:  Undefined index: imagenSlide in /home/marvin/web-nica.com/admin/controladores/slideC.php on line 65
