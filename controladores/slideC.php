@@ -10,8 +10,8 @@ class SlideC{
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8">
-                                <h1>'.$value["titular"].'</h1>
-                                <p>'.$value["descripcion"].'</p>
+                                <h1>'.utf8_encode($value["titular"]).'</h1>
+                                <p>'.utf8_encode($value["descripcion"]).'</p>
                                 <a href="'.$value["urlPag"].'" title="" class="btn btn-lg btn-primary">Leer más</a>
                             </div>
                         </div>

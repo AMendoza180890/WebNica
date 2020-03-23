@@ -1,3 +1,4 @@
+//borrar usuarios
 $(".TB").on("click", ".BorrarU", function() {
     var CatUsuId = $(this).attr("CatUsuId");
     var CatUsuFoto = $(this).attr("CatUsuFoto");

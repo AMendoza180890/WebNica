@@ -27,13 +27,13 @@ class SlideM extends ConexionBD{
         try {
             if ($item != null) {
                 $cn = new ConexionBD();
-                $pdo = $cn->cBD()->prepare("SELECT * FROM catslide WHERE $item = :$item");
-                $pdo -> bindParam(":".$item,$valor,PDO::PARAM_INT);
+                $pdo = $cn->cBD()->prepare("SELECT id, titular, descripcion, orden, imagen, urlPag FROM catslide WHERE $item = :$item");
+                $pdo -> bindParam(":".$item, $valor, PDO::PARAM_INT);
                 $pdo->execute();
                 return $pdo->fetch();
             }else {
                 $cn = new ConexionBD();
-                $pdo = $cn->cBD()->prepare("SELECT * FROM catslide ORDER BY orden ASC");
+                $pdo = $cn->cBD()->prepare("SELECT id, titular, descripcion, orden, imagen, urlPag FROM catslide ORDER BY orden ASC");
                 $pdo -> execute();
                 return $pdo -> fetchAll();
             }

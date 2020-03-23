@@ -39,6 +39,7 @@ class SlideC{
                 if (!empty($_POST["imagenActual"])) {
                     unlink($_POST["imagenActual"]);
                 }else {
+                    $direc = "vistas/img/slide/";
                     mkdir($direc,0755);
                 }
                 if ($_FILES["imagenE"]) {

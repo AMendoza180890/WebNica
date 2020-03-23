@@ -16,7 +16,6 @@ $(".TB").on("click", ".EditarSlide", function() {
         success: function(respuesta) {
             $("#Sid").val(respuesta["id"]);
             $("#imagenActual").val(respuesta["imagen"]);
-
             if (respuesta["imagen"] != "") {
                 $(".visor").attr("src", respuesta["imagen"]);
             } else {
@@ -31,9 +30,8 @@ $(".TB").on("click", ".EditarSlide", function() {
 })
 
 //Borrar Slide
-$(".TB").on("click",".BorrarSlide", function(){
+$(".TB").on("click", ".BorrarSlide", function() {
     var Sid = $(this).attr("Sid");
     var imagenSlide = $(this).attr("imagenSlide");
-
-    window.location = 'index.php?ruta=slide&Sid='+Sid+'$imagenSlide='+imagenSlide;
+    window.location = 'index.php?ruta=slide&Sid=' + Sid + '$imagenSlide=' + imagenSlide;
 })
