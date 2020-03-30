@@ -11,7 +11,7 @@
                         <div class="form-group">
                             <h2>Titular:</h2>
                             <input type="text" class="form-control input-lg" id="titularE" name="titularE" require>
-                            <input type="hidden" id="Sid" name="Sid">
+                            <input type="text" id="Sid" name="Sid">
                         </div>
                         <div class="form-group">
                             <h2>Descripcion:</h2>
