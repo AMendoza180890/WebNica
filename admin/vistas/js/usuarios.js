@@ -37,3 +37,8 @@ $(".TB").on("click", ".EditarU", function() {
         }
     })
 })
+
+//solucionar espaciado de los tesxtarea
+$("textarea").each(function() {
+    $(this).val($(this).val().trim());
+})

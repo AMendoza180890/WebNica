@@ -13,5 +13,7 @@ class EmpListM extends ConexionBD
             mensajes::error($ex);
         }
     }
+
+    
 }
 ?>

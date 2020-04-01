@@ -26,32 +26,15 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <form role="form" method="post" enctype="multipart/form-data">
-
-                <div class="modal-header">
-                    <h3>Editar Nuestros Servicios</h3>
-                </div>
-
-                <div class="modal-body">
-                    <div class="box-body">
-
-                        <div class="form-group">
-                            <h2>Imagen Banner:</h2>
-                            <input type="file" name="imagenE">
-                            <img src="vistas/img/usuarios/default.png" class="img-thumbnail visor" width="250px">
-                        </div>
-
-                        <div class="form-group">
-                            <h2>Descripcion</h2>
-                            <textarea class="form-control" name="descripcionE" required></textarea>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-success" type="submit">Guardar</button>
-                    <button class="btn btn-danger" type="submit" data-dismiss="modal">Cancelar</button>
-                </div>
+                <?php
+                    $MostrarEncServicio = new ServicioC();
+                    $MostrarEncServicio -> EditarEncServicioFrmC();
+                ?>
             </form>
         </div>
     </div>
 </div>
+<?php
+$EditarEncServicio = new servicioC();
+$EditarEncServicio->EditarEncServicioC();
+?>

@@ -1,22 +1,7 @@
-  <div class="section-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <img class="img-responsive" src="vistas/assets/images/Paginaweb-01.jpg">
-        </div>
-      </div>
-    </div>
-
-    <div class="section-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p class="noto">Actualmente las personas pasan gran parte de su tiempo conectados a internet, ante esta singularidad del mundo en el que vivimos, las pymes, los restaurantes, los negocios de ropa, las marcas deportivas están obligadas a trasladarse a la web y aprovechar las ventajas que ofrecen los espacios en internet.
-              Existen muchas formas de aprovechar la web, eso depende de tu público meta y el tipo de negocio. <br><br>
-              Nuestros servicios se adecúan a tus objetivos y expectativas de tu empresa.
-            </p>
-          </div>
-        </div>
+  <?php
+    $headerAbout = new serviciosC();
+    $headerAbout -> servicioHeaderC();
+  ?>
 
         <div class="section-container border-section-container">
           <div class="container">
