@@ -12,6 +12,7 @@ require_once 'controladores/usuarioVerPerfil.php';
 require_once 'controladores/slideC.php';
 require_once 'controladores/TratamientoImgS.php';
 require_once 'controladores/ServiciosC.php';
+require_once 'controladores/CatServiciosC.php';
 
 require_once 'modelo/EmpListM.php';
 require_once 'modelo/UsuarioCrearM.php';
@@ -22,6 +23,7 @@ require_once 'modelo/ActualizarUserM.php';
 require_once 'modelo/usuarioVerPerfilM.php';
 require_once 'modelo/slideM.php';
 require_once 'modelo/ServiciosM.php';
+require_once 'modelo/CatServiciosM.php';
 
 
 $plantilla = new plantillas();
