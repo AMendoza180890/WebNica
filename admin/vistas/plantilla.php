@@ -94,6 +94,8 @@
     <script src="vistas/js/usuarios.js"></script>
     <!--Se obtiene informacion de la base de datos y se carga en el formuario slide-->
     <script src="vistas/js/slides.js"></script>
+    <!--modulo de servicios-->
+    <script src="vistas/js/Servicios.js"></script>
 </body>
 
 </html>

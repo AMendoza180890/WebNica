@@ -17,10 +17,14 @@
                      </tr>
                  </thead>
                  <tbody>
-                         <?php
-                            $MostrarServicios = new CatServicioGralC();
-                            $MostrarServicios -> verServiciosC();
-                         ?>
+                     <?php
+                        $MostrarServicios = new CatServicioGralC();
+                        $MostrarServicios->verServiciosC();
+
+                        $item = null;
+                        $valor = null;
+                        $CargarServ = CatServicioGralC::CargarServicioC($item, $valor);
+                        ?>
                  </tbody>
              </table>
          </div>
@@ -43,8 +47,8 @@
                  </div>
                  <div class="modal-body">
                      <div class="box-body">
-                         
-                        <div class="form-group">
+
+                         <div class="form-group">
                              <h2>Icono:</h2>
                              <input type="text" class="form-control input-lg" name="iconoN" require>
                          </div>
@@ -67,8 +71,8 @@
                  </div>
                  <?php
                     $crearServ = new CatServicioGralC();
-                    $crearServ -> CrearServicioGralC();
-                ?>
+                    $crearServ->CrearServicioGralC();
+                    ?>
              </form>
          </div>
      </div>
@@ -94,7 +98,7 @@
                          <div class="form-group">
                              <h2>Titular:</h2>
                              <input type="text" class="form-control input-lg" id="titularE" name="titularE" require>
-                             <input type="hidden" id="Sid" name="Sid">
+                             <input type="hidden" id="Servicioid" name="Servicioid">
                          </div>
 
                          <div class="form-group">
@@ -109,19 +113,14 @@
                      <button type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
                  </div>
                  <?php
-                    /*
-                    $actualizarS = new SlideC();
-                    $actualizarS->ActualizarSlideC();
-                    */
+                    $ActualiarCatServicio = new CatServicioGralC();
+                    $ActualiarCatServicio -> ActualizarCatServicioC();
                     ?>
              </form>
          </div>
      </div>
  </div>
-
  <?php
-    /*
-    $BorrarS = new SlideC();
-    $BorrarS->BorrarSlideC();
-    */
+    $BorrarServicio = new CatServicioGralC();
+    $BorrarServicio->CatServicioBorrarC();
 ?>
