@@ -28,7 +28,7 @@
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-archive"></i>
+                <a href="mensajes"><i class="fa fa-archive"></i>
                     <span>Mensajes</span></a>
             </li>
 
