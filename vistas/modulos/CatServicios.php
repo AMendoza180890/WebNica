@@ -8,18 +8,18 @@
                                     }
                                         echo '<div class="col-12 col-lg-3">
                                             <div class="fa-container">
-                                                <i class="'.$servicios[$j]->CatServIcono.' fa-3x" aria-hidden="true"></i>
+                                                <i class="'.utf8_encode($servicios[$j]->CatServIcono).' fa-3x" aria-hidden="true"></i>
                                             </div>
 
                                             <div class="text-center">
-                                                <h3>'.$servicios[$j]->CatServTitulo.'</h3>
+                                                <h3>'.utf8_encode($servicios[$j]->CatServTitulo).'</h3>
                                             </div>
 
                                             <div>
-                                                <p class="noto text-center">'.$servicios[$j]->CatServDescripcion .'</p>
+                                                <p class="noto text-center">'.utf8_encode($servicios[$j]->CatServDescripcion) .'</p>
                                             </div>
                                         </div>';
-                                if ($j == 3 || $j == 8) {
+                                if ($j == 3 || $j == 7) {
                                     echo '</div>';
                                 }
                             }  

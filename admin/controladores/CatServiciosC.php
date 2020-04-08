@@ -8,8 +8,8 @@ class CatServicioGralC{
                 echo '<tr>
                         <td>'.$value["id"].'</td>
                          <td>'.$value["catservicono"].'</td>
-                         <td>'.$value["catservtitulo"].'</td>
-                         <td>'.$value["catservdescripcion"].'</td>
+                         <td>'.utf8_encode($value["catservtitulo"]).'</td>
+                         <td>'.utf8_encode($value["catservdescripcion"]).'</td>
                          <td>
                              <div class="btn-group">
                                  <button class="btn btn-success EditarServicio" ServId="'.$value["id"]. '"><i class="fa fa-pencil" data-toggle="modal" data-target="#EditarServicio"></i></button>
