@@ -2,7 +2,7 @@
      <!-- Content Header (Page header) -->
      <section class="content-header">
          <h1>
-             Gestor de usuarios
+             Gestor de Mensajes
          </h1>
      </section>
 
@@ -28,7 +28,7 @@
                          <tr>
                              <th>N</th>
                              <th>Nombre</th>
-                             <th>Contraseña</th>
+                             <th>Email</th>
                              <th>Editar / Eliminar</th>
                          </tr>
                      </thead>
@@ -36,12 +36,6 @@
                          <?php
                             $vermensajes = new mensajesC();
                             $vermensajes->cargar_lista_mensajesC();
-                            /*
-                            $item = null;
-                            $valor = null;
-
-                            $UdtUser = UpdateUserC::UpdateInfoUserC($item, $valor);
-                            */
                             ?>
                      </tbody>
                  </table>
@@ -52,4 +46,3 @@
      </section>
      <!-- /.content -->
  </div>
- <?php // include 'vistas/modulos/RegUsuarios.php'; ?>

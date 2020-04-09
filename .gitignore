@@ -4,4 +4,7 @@
 ### Prepros ###
 # Config Prepros files to ignore
 prepros-6.config
+/logs/
+/logs
+/admin/AdminLTE-2.4.2
 # End of https://www.gitignore.io/api/prepros

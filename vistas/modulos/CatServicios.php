@@ -1,5 +1,6 @@
             <?php
-                $ViewCatServicios = new CatServiciosViewControler();
+            try {
+            $ViewCatServicios = new CatServiciosViewControler();
                 $servicios = $ViewCatServicios::CatServicioViewCont();
 
                             for ($j=0; $j < count($servicios); $j++) {
@@ -22,6 +23,10 @@
                                 if ($j == 3 || $j == 7) {
                                     echo '</div>';
                                 }
-                            }  
+                            }
+            } catch (Exception $ex) {
+                mensajes::error($ex);
+            }
+                  
 
             ?>

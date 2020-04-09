@@ -1,10 +1,13 @@
 <?php
 class mensajes{
     public static function error($mensaje){
-        echo 'Error: '.$mensaje;       
-  }
+            $directorio = fopen('logs/error.log', 'a');
+            fwrite($directorio, "[" . date("r") . "] Error: $mensaje\r\n");
+            fclose($directorio);
+    }
+    
     public static function exito($mensaje){
-        echo 'Mensaje: '.$mensaje;
-    } 
+        echo 'success: '.($mensaje);;
+    }
 }
 ?>
