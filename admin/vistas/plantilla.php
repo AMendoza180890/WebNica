@@ -96,6 +96,8 @@
     <script src="vistas/js/slides.js"></script>
     <!--modulo de servicios-->
     <script src="vistas/js/Servicios.js"></script>
+    <!--modulo de mensajes-->
+    <script src="vistas/js/mensajes.js"></script>
 </body>
 
 </html>

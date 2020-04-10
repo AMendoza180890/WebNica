@@ -9,8 +9,22 @@ class mensajesM extends ConexionBD{
                 return $pdo->fetchAll();
         } catch (exception $ex) {
             mensajes::error($ex);
-        }
-        
+        }  
+    }
+
+    public static function eliminar_mensaje($idBorrar){
+            try {
+                $cn = new ConexionBD;
+                $pdo = $cn->cBD()->prepare("DELETE FROM catclientcontacto WHERE catclicontid = :id");
+                $pdo -> bindParam(":id",$idBorrar,PDO::PARAM_INT);
+                if($pdo ->execute()){
+                    return true;
+                }else{
+                    return false;
+                }
+            } catch (Exception $ex) {
+                mensajes::error($ex);
+            }
     }
 }
 ?>

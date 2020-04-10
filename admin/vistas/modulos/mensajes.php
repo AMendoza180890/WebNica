@@ -46,3 +46,7 @@
      </section>
      <!-- /.content -->
  </div>
+ <?php
+    $mensaje = new mensajesC();
+    $mensaje -> borrar_mensaje();
+ ?>

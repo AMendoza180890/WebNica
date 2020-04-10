@@ -2,7 +2,7 @@
 class mensajes{
     public static function error($mensaje){
         if (!file_exists("logs/error.log")) {
-                mkdir("logs", 0777);
+                mkdir("../logs", 0777);
                 mensajes::registrar_log("Error",$mensaje);
         }else{
                 mensajes::registrar_log("Error",$mensaje);
@@ -27,5 +27,4 @@ class mensajes{
         fclose($directorio);
     }
 }
-mensajes::error("test de mensaje");
 ?>
