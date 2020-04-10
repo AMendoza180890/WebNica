@@ -12,7 +12,6 @@ class serviciosC{
                     </div>
                 </div>
                 </div>
-
                 <div class="section-container">
                 <div class="container">
                     <div class="row">
@@ -20,7 +19,6 @@ class serviciosC{
                         <p class="noto">'.utf8_encode($respuesta["HOSDescripcion"]).'</p>
                     </div>
                     </div>';
-
         } catch (exception $ex) {
             mensajes::error($ex);
         }
