@@ -26,7 +26,6 @@ class ActualizarUserM extends ConexionBD{
             $cn = new ConexionBD;
             $pdo = $cn->cBD()->prepare("UPDATE catusuario SET CatUsuario = :CatUsuario, CatPass = :CatPass, CatUsuFoto = :CatUsuFoto, CatRol = :CatRol WHERE CatUsuId = :CatUsuId");
 
-
             $pdo->bindParam(":CatUsuId", $datoC["CatUsuId"], PDO::PARAM_INT);
             $pdo->bindParam(":CatUsuario", $datoC["CatUsuario"], PDO::PARAM_STR);
             $pdo->bindParam(":CatPass", $datoC["CatPass"], PDO::PARAM_STR);

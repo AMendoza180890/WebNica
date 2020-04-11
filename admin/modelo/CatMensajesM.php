@@ -4,7 +4,7 @@ class mensajesM extends ConexionBD{
     public static function cargar_lista_mensajesM(){
         try {
             $cn = new ConexionBD;
-            $pdo = $cn -> cBD()->prepare("SELECT catclicontid,catclicontName,catclicontEmail,catclicontEmail,catclicontAdress,catclicontMessage FROM catclientcontacto");
+            $pdo = $cn -> cBD()->prepare("SELECT catclicontid,catclicontName,catclicontEmail,catclicontAdress,catclicontMessage FROM catclientcontacto");
             $pdo -> execute();
                 return $pdo->fetchAll();
         } catch (exception $ex) {
@@ -25,6 +25,25 @@ class mensajesM extends ConexionBD{
             } catch (Exception $ex) {
                 mensajes::error($ex);
             }
+    }
+
+    public static function obtenerMensajes($idMensaje){
+        try {
+           if ($idMensaje != null) {
+               $cn = new ConexionBD;
+               $pdo = $cn->cBD()->prepare("SELECT catclicontid, catclicontName, catclicontEmail, catclicontAdress, catclicontMessage FROM catclientcontacto WHERE catclicontid = :id");
+               $pdo -> bindParam(":id",$idMensaje,PDO::PARAM_INT);
+               $pdo -> execute();
+               return $pdo->fetch();
+           }else{
+                $cn     =   new ConexionBD;
+                $pdo    =   $cn->cBD()->prepare("SELECT catclicontid, catclicontName, catclicontEmail, catclicontAdress, catclicontMessage FROM catclientcontacto");
+                $pdo    ->  execute();
+                return $pdo->fetchAll();
+           }
+        } catch (exception $ex) {
+            mensajes::error($ex);
+        }   
     }
 }
 ?>

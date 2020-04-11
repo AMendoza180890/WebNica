@@ -10,7 +10,7 @@ class mensajesC{
                 <td>' . $value["catclicontEmail"] . '</td>';
                 echo '<td>
                         <div class="btn-group">
-                            <button class="btn btn-success EditarU" CatUsuId="' . $value["catclicontid"] . '"><i class="fa fa-pencil" data-toggle="modal" data-target="#EditarU"></i></button>
+                            <button class="btn btn-success btnEditmsg" iduptmsg="' . $value["catclicontid"] . '"><i class="fa fa-pencil" data-toggle="modal" data-target="#mostarMensaje"></i></button>
                             <button class="btn btn-danger btndelmsg" idErs="' . $value["catclicontid"] .'"><i class="fa fa-times"></i></button>
                         </div>
                     </td> 
@@ -34,6 +34,15 @@ class mensajesC{
                     mensajes::error("Ocurrio un problema al eliminar el mensaje");
                 }
             }
+        } catch (exception $ex) {
+            mensajes::error($ex);
+        }
+    }
+
+    public static function mostrarMensajeC($id){
+        try {
+            $respuesta =  mensajesM::obtenerMensajes($id);
+            return $respuesta;
         } catch (exception $ex) {
             mensajes::error($ex);
         }

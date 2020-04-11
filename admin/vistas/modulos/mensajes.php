@@ -36,6 +36,9 @@
                          <?php
                             $vermensajes = new mensajesC();
                             $vermensajes->cargar_lista_mensajesC();
+
+                            $id = null;
+                            $obtenerMsg = mensajesC::mostrarMensajeC($id);
                             ?>
                      </tbody>
                  </table>
@@ -46,7 +49,52 @@
      </section>
      <!-- /.content -->
  </div>
+
+ <!--modulo enmaquetado del visor de correo electronico-->
+ <div class="modal fade" role="dialog" id="mostarMensaje">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <form method="post" role="form" enctype="multipart/form-data">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                     <h3>Visor de Mensaje</h3>
+                 </div>
+                 <div class="modal-body">
+                     <div class="box-body">
+                         <div class="form-group">
+                             <h2>Nombre:</h2>
+                             <input type="text" class="form-control input-lg" id="nombreE" name="nombreE" require>
+                             <input type="hidden" id="idE" name="idE">
+                         </div>
+                         <div class="form-group">
+                             <h2>Email:</h2>
+                             <input type="text" class="form-control input-lg" id="emailE" name="emailE">
+                         </div>
+                         <div class="form-group">
+                             <h2>Direccion:</h2>
+                             <input type="text" class="form-control input-lg" id="direccionE" name="direccionE" require>
+                         </div>
+                         <div class="form-group">
+                             <h2>Descripcion:</h2>
+                             <textarea id="descripcionE" name="descripcionE" cols="30" rows="10"></textarea>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="modal-footer">
+                     <!--<button type="submit" class="btn btn-primary">Guardar</button>-->
+                     <button type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
+                 </div>
+                 <?php
+                    /*
+                    $actualizarS = new SlideC();
+                    $actualizarS->ActualizarSlideC();
+                    */
+                ?>
+             </form>
+         </div>
+     </div>
+ </div>
  <?php
     $mensaje = new mensajesC();
-    $mensaje -> borrar_mensaje();
- ?>
+    $mensaje->borrar_mensaje();
+?>

@@ -1,25 +1,25 @@
 <?php
 class mensajes{
+
     public static function error($mensaje){
         if (!file_exists($GLOBALS['PATH'])) {
                 mkdir("../logs", 0777);
-                mensajes::registrar_log("Error",$mensaje);
+                mensajes::admin_registrar_log("Error",$mensaje);
         }else{
-                mensajes::registrar_log("Error",$mensaje);
-        }
-            
+                mensajes::admin_registrar_log("Error",$mensaje);
+        }   
     }
         
     public static function exito($mensaje){
         if (!file_exists($GLOBALS['PATH'])) {
-            mkdir("logs", 0777);
-            mensajes::registrar_log("Exito_Bien_Hecho",$mensaje);
+            mkdir("admin/logs", 0777);
+            mensajes::admin_registrar_log("Exito_Bien_Hecho",$mensaje);
         } else {
-            mensajes::registrar_log("Exito_Bien_Hecho",$mensaje);
+            mensajes::admin_registrar_log("Exito_Bien_Hecho",$mensaje);
         }
     }
 
-    private static function registrar_log($titulo_estado,$mensaje)
+    private static function admin_registrar_log($titulo_estado,$mensaje)
     {
         $ip = $_SERVER["REMOTE_ADDR"];
         $directorio = fopen($GLOBALS['PATH'], 'a');
@@ -27,5 +27,6 @@ class mensajes{
         fclose($directorio);
     }
 }
-$PATH = 'logs/error.log';
+$PATH = '/admin/logs/error.log';
+mensajes::error("mensaje de prueba admin");
 ?>
