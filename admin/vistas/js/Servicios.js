@@ -1,3 +1,4 @@
+// codigo en la aplicacion local
 $(".TB").on("click", ".EditarServicio", function() {
     var ServId = $(this).attr("ServId");
     var datos = new FormData();
@@ -13,9 +14,9 @@ $(".TB").on("click", ".EditarServicio", function() {
         dataType: "json",
         success: function(respuesta) {
             $("#Servicioid").val(respuesta["id"]);
-            $("#iconoE").val(respuesta["catservicono"]);
-            $("#titularE").val(respuesta["catservtitulo"]);
-            $("#descripcionE").val(respuesta["catservdescripcion"]);
+            $("#iconoE").val(respuesta["CatServIcono"]);
+            $("#titularE").val(respuesta["CatServTitulo"]);
+            $("#descripcionE").val(respuesta["CatServDescripcion"]);
         }
     })
 })
@@ -23,5 +24,5 @@ $(".TB").on("click", ".EditarServicio", function() {
 // borrar Servicios de la base de datos
 $(".TB").on("click", ".BorrarServicios", function() {
     var Cod = $(this).attr("ServId");
-    window.location = "index.php?ruta=nosotros&ServId=" + Cod;
+    window.location = "index.php?ruta=Servicios&ServId=" + Cod;
 })

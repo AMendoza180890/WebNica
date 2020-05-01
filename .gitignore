@@ -3,6 +3,8 @@
 
 ### Prepros ###
 # Config Prepros files to ignore
+/admin/modelo/ConexionBD.php
+/Modelos/conexionBD.php
 prepros-6.config
 /logs/
 /logs

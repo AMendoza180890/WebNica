@@ -7,7 +7,6 @@ class ConexionBD{
 
     public function __construct()
     {
-        
         $this->host     =   $_SERVER['SERVER_NAME'];
         $this->db       =   "dbwebnica";
         $this->user     =   "root";
@@ -18,6 +17,7 @@ class ConexionBD{
         $this->user     =   "marvin_userWebNi";
         $this->passw    =   "Soloyo246$$";
         */
+        
     }
             
     public  function cBD(){

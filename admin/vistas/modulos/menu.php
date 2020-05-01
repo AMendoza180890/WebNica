@@ -14,7 +14,12 @@
 
             <li>
                 <a href="nosotros"><i class="fa fa-edit"></i>
-                    <span>Nuestros Servicios</span></a>
+                    <span>Encabezado de Servicios</span></a>
+            </li>
+
+            <li>
+                <a href="Servicios"><i class="fa fa-bars"></i>
+                    <span>Catalogo de Servicios</span></a>
             </li>
 
             <li>

@@ -19,8 +19,6 @@
             </div>
         </div>
     </section>
-        <!--Seccion de servicios-->
-        <?php include 'vistas/modulos/servicios.php';?>
 </div>
 <!--Ventana modal-->
 <div id="EditarNosotros" class="modal fade" role="dialog">

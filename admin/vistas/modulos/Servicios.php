@@ -1,38 +1,44 @@
- <!-- Main content -->
- <section class="content">
-     <!-- Default box -->
-     <div class="box">
-         <div class="box-header with-border">
-             <button class="btn btn-primary" data-toggle="modal" data-target="#CrearServicios">Crear Servicio</button>
-         </div>
-         <div class="box-body">
-             <table class="table table-bordered table-hover table-striped TB">
-                 <thead>
-                     <tr>
-                         <th>N</th>
-                         <th>icono</th>
-                         <th>Titular</th>
-                         <th>Descripcion</th>
-                         <th>Editar / Eliminar</th>
-                     </tr>
-                 </thead>
-                 <tbody>
-                     <?php
-                        $MostrarServicios = new CatServicioGralC();
-                        $MostrarServicios->verServiciosC();
+ <div class="content-wrapper">
+     <!-- Content Header (Page header) -->
+     <section class="content-header">
+         <h1>
+             Gestor de Nuestros Servicios
+         </h1>
+     </section>
+     <!-- Main content -->
+     <section class="content">
+         <!-- Default box -->
+         <div class="box">
+             <div class="box-header with-border">
+                 <button class="btn btn-primary" data-toggle="modal" data-target="#CrearServicios">Crear Servicio</button>
+             </div>
+             <div class="box-body">
+                 <table class="table table-bordered table-hover table-striped TB">
+                     <thead>
+                         <tr>
+                             <th>N</th>
+                             <th>icono</th>
+                             <th>Titular</th>
+                             <th>Descripcion</th>
+                             <th>Editar / Eliminar</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <?php
+                            $MostrarServicios = new CatServicioGralC();
+                            $MostrarServicios->verServiciosC();
 
-                        $item = null;
-                        $valor = null;
-                        $CargarServ = CatServicioGralC::CargarServicioC($item, $valor);
-                        ?>
-                 </tbody>
-             </table>
+                            $valor = null;
+                            CatServicioGralC::CargarServicioC($valor);
+                            ?>
+                     </tbody>
+                 </table>
+             </div>
+             <!-- /.box-footer-->
          </div>
-         <!-- /.box-footer-->
-     </div>
-     <!-- /.box -->
- </section>
-
+         <!-- /.box -->
+     </section>
+ </div>
 
 
  <!--Modal CRUD -->
@@ -114,7 +120,7 @@
                  </div>
                  <?php
                     $ActualiarCatServicio = new CatServicioGralC();
-                    $ActualiarCatServicio -> ActualizarCatServicioC();
+                    $ActualiarCatServicio->ActualizarCatServicioC();
                     ?>
              </form>
          </div>
@@ -123,4 +129,4 @@
  <?php
     $BorrarServicio = new CatServicioGralC();
     $BorrarServicio->CatServicioBorrarC();
-?>
+    ?>

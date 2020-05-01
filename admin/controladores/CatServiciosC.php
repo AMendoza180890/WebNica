@@ -7,9 +7,9 @@ class CatServicioGralC{
             foreach ($respuesta as $key => $value) {
                 echo '<tr>
                         <td>'.$value["id"].'</td>
-                         <td>'.$value["catservicono"].'</td>
-                         <td>'.utf8_encode($value["catservtitulo"]).'</td>
-                         <td>'.utf8_encode($value["catservdescripcion"]).'</td>
+                         <td>'.utf8_encode($value["CatServIcono"]).'</td>
+                         <td>'.utf8_encode($value["CatServTitulo"]).'</td>
+                         <td>'.utf8_encode($value["CatServDescripcion"]).'</td>
                          <td>
                              <div class="btn-group">
                                  <button class="btn btn-success EditarServicio" ServId="'.$value["id"]. '"><i class="fa fa-pencil" data-toggle="modal" data-target="#EditarServicio"></i></button>
@@ -29,9 +29,7 @@ class CatServicioGralC{
                 $datosC = array('iconServ'=> $_POST["iconoN"],'titleServ'=> $_POST["titularN"],'descServ'=> $_POST["descripcionN"]);
                 $respuesta = CatServicioGralM::CrearServicioGralM($datosC);
                 if ($respuesta) {
-                    echo '<script>
-                            window.location="nosotros";
-                                </script>';
+                    echo '<script>window.location="Servicios";</script>';
                 }else {
                     echo 'A ocurrido un error, Intentelo mas tarde';
                 }
@@ -41,12 +39,10 @@ class CatServicioGralC{
         }
     }
 
-    public static function CargarServicioC($item, $valor){
+    public static function CargarServicioC($valor){
         try {
-            if (isset($_POST["ServId"])) {
-                $respuesta = CatServicioGralM::CargarServicioM($item, $valor);
+                $respuesta = CatServicioGralM::CargarServicioM($valor);
                 return $respuesta;
-            }
         } catch (exception $ex) {
             mensajes::error($ex);
         }
@@ -60,7 +56,7 @@ class CatServicioGralC{
             $respuesta = CatServicioGralM::ActualizarCatServicioM($datosC);
 
             if ($respuesta) {
-                echo '<script>window.location="nosotros";</script>';
+                echo '<script>window.location="Servicios";</script>';
             }else {
                 echo 'Ocurrio un error, porfavor intentar luego';
             }
@@ -76,7 +72,7 @@ class CatServicioGralC{
                 $datosC = $_GET["ServId"];
                 $respuesta = CatServicioGralM::CatServiciosBorrarM($datosC);
                 if ($respuesta) {
-                    echo '<script>window.location="nosotros";</script>';
+                    echo '<script>window.location="Servicios";</script>';
                 }else {
                     echo 'Ocurrio un erro, intente luego';
                 }

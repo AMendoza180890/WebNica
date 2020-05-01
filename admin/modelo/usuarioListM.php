@@ -2,7 +2,6 @@
 require_once 'ConexionBD.php';
 class UsuariosListM extends ConexionBD
 {
-
     public static function listaUsuario()
     {
         try {
