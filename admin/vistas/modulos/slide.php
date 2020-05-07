@@ -41,8 +41,8 @@
                            echo ' <tr>
                              <td>'.($key + 1).'</td>
                              <td><img src="'.$value["imagen"].'" class="img-thumbnail" width="300px" alt=""></td>
-                             <td>'.$value["titular"].'</td>
-                             <td>'.$value["descripcion"].'</td>
+                             <td>'.utf8_decode($value["titular"]).'</td>
+                             <td>'.utf8_decode($value["descripcion"]).'</td>
                              <td><h1>'.$value["orden"]. '</h1></td>
                              <td>
                                  <div class="btn-group">

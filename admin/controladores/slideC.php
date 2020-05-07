@@ -7,10 +7,8 @@ class SlideC{
                 if (isset($_FILES["imagenN"]["tmp_name"]) && !empty($_FILES["imagenN"]["tmp_name"])) {
                    $rutaImg = EditImgSlide::imgEditar("imagenN");
                 }
-                $datosC = array('titular' => $_POST["titularN"], 'descripcion' => $_POST["descripcionN"], 'urlPag' => $_POST["urlPagN"], 'orden'=>$_POST["ordenN"], 'imagen'=>$rutaImg);
-    
+                $datosC = array('titular' => utf8_encode($_POST["titularN"]), 'descripcion' => utf8_encode($_POST["descripcionN"]), 'urlPag' => $_POST["urlPagN"], 'orden'=>$_POST["ordenN"], 'imagen'=>$rutaImg);
                 $respuesta = SlideM::CrearSlideM($datosC);
-    
                 if ($respuesta == true) {
                     echo '<script>window.location="slide";</script>';
                 }else {
@@ -24,14 +22,13 @@ class SlideC{
     //ver slide en tabla
     public static function VerSlideC($item, $valor){
         try {
-            $respuesta = slideM::VerSlideM($item, $valor);
-            return $respuesta;
+            $mostrarSlide = SlideM::VerSlideM($item, $valor);
+            return $mostrarSlide;
         } catch (Exception $ex) {
             mensajes::error($ex);
         }
     }
 
-    // Actualizar Slide
     public function ActualizarSlideC(){
         if (isset($_POST["Sid"])) {
             $rutaImg = $_POST["imagenActual"];
@@ -46,11 +43,8 @@ class SlideC{
                     $rutaImg = EditImgSlide::imgEditar("imagenE");
                 }
             }
-
-            $datosC = array('id' => $_POST["Sid"] , 'titular'=> $_POST["titularE"], 'descripcion' => $_POST["descripcionE"],'urlPag' => $_POST["urlPagE"], 'orden'=> $_POST["ordenE"],'imagen'=>$rutaImg);
-
+            $datosC = array('id' => $_POST["Sid"] , 'titular'=> utf8_encode($_POST["titularE"]), 'descripcion' => utf8_encode($_POST["descripcionE"]),'urlPag' => $_POST["urlPagE"], 'orden'=> $_POST["ordenE"],'imagen'=>$rutaImg);
             $respuesta = SlideM::ActualizarSlideM($datosC);
-
             if ($respuesta == true) {
                 echo '<script>window.location = "slide"</script>';
             }else {
@@ -59,7 +53,6 @@ class SlideC{
         }
     }
 
-    // Borrar Slide
     public function BorrarSlideC(){
         if (isset($_GET["Sid"])) {
             $id = $_GET["Sid"];

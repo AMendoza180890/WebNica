@@ -8,7 +8,7 @@
                         $rutaImg = EditImg::imgEditar("fotoN");
                     }
                     $tablabd="catusuario";    
-                    $datosC = array("CatEmpId"=>$_POST["empN"], "CatUsuario"=>$_POST["usuarioN"], "CatPass"=>$_POST["claveN"], "CatRol"=>$_POST["rolN"], "CatUsuFoto"=>$rutaImg);
+                    $datosC = array("CatEmpId"=>$_POST["empN"], "CatUsuario"=>utf8_encode($_POST["usuarioN"]), "CatPass"=>$_POST["claveN"], "CatRol"=>$_POST["rolN"], "CatUsuFoto"=>$rutaImg);
                     $respuesta = UsuarioCrearM::CrearUsuarioM($tablabd,$datosC);
                     if ($respuesta == true) {
                         echo '<script>

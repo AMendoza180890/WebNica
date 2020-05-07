@@ -1,5 +1,7 @@
 // codigo en la aplicacion local
-$(".TB").on("click", ".EditarServicio", function() {
+// $(".TB").on("click", ".EditarServicio", function() {
+$(".EditarServicio").on("click", function() {
+
     var ServId = $(this).attr("ServId");
     var datos = new FormData();
     datos.append("ServId", ServId);
@@ -13,10 +15,11 @@ $(".TB").on("click", ".EditarServicio", function() {
         processData: false,
         dataType: "json",
         success: function(respuesta) {
+            //console.log(respuesta);
             $("#Servicioid").val(respuesta["id"]);
             $("#iconoE").val(respuesta["CatServIcono"]);
-            $("#titularE").val(respuesta["CatServTitulo"]);
-            $("#descripcionE").val(respuesta["CatServDescripcion"]);
+            $("#titularE").val(decodeURIComponent(escape(respuesta["CatServTitulo"])));
+            $("#descripcionE").val(decodeURIComponent(escape(respuesta["CatServDescripcion"])));
         }
     })
 })

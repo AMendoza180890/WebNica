@@ -32,18 +32,23 @@ class CatServicioGralM extends ConexionBD{
     // cargar valores del servicio de la base de Datos
     public static function CargarServicioM($valor){
         try {
-            if ($valor !== Null) {     
+            if ($valor !== Null && !empty($valor)) {
                 $cn = new ConexionBD;
+                //$sql = str_replace("?", $valor, "SELECT id, CatServIcono, CatServTitulo, CatServDescripcion FROM catservicios WHERE id = ?");
+                //echo '<script>console.log('.$sql.');</script>';
                 $pdo = $cn->cBD()->prepare("SELECT id, CatServIcono, CatServTitulo, CatServDescripcion FROM catservicios WHERE id = :id");
-                $pdo -> bindParam(":id",$valor,PDO::PARAM_INT);
+                $pdo -> bindParam(":id", $valor, PDO::PARAM_INT);
                 $pdo->execute();
                 return $pdo->fetch();
+
             }else {
                 $cn = new ConexionBD;
                 $pdo = $cn->cBD()->prepare("SELECT id, CatServIcono, CatServTitulo, CatServDescripcion FROM catservicios");
                 $pdo->execute();
                 return $pdo->fetchAll();
+
             }
+
         } catch (Exception $ex) {
             mensajes::error($ex);
         }

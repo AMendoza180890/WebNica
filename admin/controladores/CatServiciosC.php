@@ -7,9 +7,9 @@ class CatServicioGralC{
             foreach ($respuesta as $key => $value) {
                 echo '<tr>
                         <td>'.$value["id"].'</td>
-                         <td>'.utf8_encode($value["CatServIcono"]).'</td>
-                         <td>'.utf8_encode($value["CatServTitulo"]).'</td>
-                         <td>'.utf8_encode($value["CatServDescripcion"]).'</td>
+                         <td>'.utf8_decode($value["CatServIcono"]).'</td>
+                         <td>'.utf8_decode($value["CatServTitulo"]).'</td>
+                         <td>'.utf8_decode($value["CatServDescripcion"]).'</td>
                          <td>
                              <div class="btn-group">
                                  <button class="btn btn-success EditarServicio" ServId="'.$value["id"]. '"><i class="fa fa-pencil" data-toggle="modal" data-target="#EditarServicio"></i></button>
@@ -26,7 +26,7 @@ class CatServicioGralC{
     public function CrearServicioGralC(){
         try {
             if (isset($_POST["iconoN"])) {
-                $datosC = array('iconServ'=> $_POST["iconoN"],'titleServ'=> $_POST["titularN"],'descServ'=> $_POST["descripcionN"]);
+                $datosC = array('iconServ'=> $_POST["iconoN"],'titleServ'=> utf8_encode($_POST["titularN"]),'descServ'=> utf8_encode($_POST["descripcionN"]));
                 $respuesta = CatServicioGralM::CrearServicioGralM($datosC);
                 if ($respuesta) {
                     echo '<script>window.location="Servicios";</script>';
@@ -51,10 +51,8 @@ class CatServicioGralC{
     public function ActualizarCatServicioC(){
       try {
         if (isset($_POST["Servicioid"])) {
-            $datosC = array('id' => $_POST["Servicioid"],'iconoNew' => $_POST["iconoE"],'tituloNew' => $_POST["titularE"],'descripcionNew' => $_POST["descripcionE"] );
-
+            $datosC = array('id' => $_POST["Servicioid"],'iconoNew' => $_POST["iconoE"],'tituloNew' => utf8_encode($_POST["titularE"]),'descripcionNew' => utf8_encode($_POST["descripcionE"]));
             $respuesta = CatServicioGralM::ActualizarCatServicioM($datosC);
-
             if ($respuesta) {
                 echo '<script>window.location="Servicios";</script>';
             }else {

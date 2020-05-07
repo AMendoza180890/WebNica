@@ -1,7 +1,6 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,6 +62,11 @@
     <!-- jQuery UI 1.11.4 -->
     <script src="vistas/bower_components/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+
+    <script src="bower_components/wysihtml/dist/wysihtml-toolbar.min.js"></script>
+    <script src="bower_components/wysihtml/parser_rules/advanced_and_extended.js"></script>
+
+
     <script>
         $.widget.bridge('uibutton', $.ui.button);
     </script>

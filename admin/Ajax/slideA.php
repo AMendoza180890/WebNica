@@ -8,6 +8,7 @@
             $item = "id";
             $valor = $this->Sid;
             $respuesta = SlideC::VerSlideC($item, $valor);
+            //echo '<script>console.log('.$respuesta.')</script>';
             echo json_encode($respuesta);
         }
     }

@@ -2,8 +2,9 @@
 $(".TB").on("click", ".EditarSlide", function() {
     var Sid = $(this).attr("Sid");
     var datos = new FormData();
-
     datos.append("Sid", Sid);
+
+    debugger
 
     $.ajax({
         url: "Ajax/slideA.php",
@@ -23,8 +24,8 @@ $(".TB").on("click", ".EditarSlide", function() {
                 $(".visor").attr("src", "vistas/img/usuarios/default.png");
             }
 
-            $("#titularE").val(respuesta["titular"]);
-            $("#descripcionE").val(respuesta["descripcion"]);
+            $("#titularE").val(decodeURIComponent(escape(respuesta["titular"])));
+            $("#descripcionE").val(decodeURIComponent(escape(respuesta["descripcion"])));
             $("#urlPagE").val(respuesta["urlPag"]);
             $("#ordenE").val(respuesta["orden"]);
         }
