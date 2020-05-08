@@ -13,8 +13,8 @@ class classBlogC{
                             <th>'.$value['Orden'].'</th>
                             <td>
                                 <div class="btn btn-group">
-                                    <button class="btn btn-success"><i class="fa fa-pencil"></i></button>
-                                    <button class="btn btn-danger eliminarEntrada" blgidCln="'. $value['id'].'"><i class="fa fa-times"></i></button>
+                                    <button class="btn btn-success actualizarEntrada" updtCod="'.$value['id']. '"><i class="fa fa-pencil" data-toggle="modal" data-target="#editarEntrada"></i></button>
+                                    <button class="btn btn-danger eliminarEntrada" blgidCln="'.$value['id'].'"><i class="fa fa-times"></i></button>
                                 </div>
                             </td>
                         </tr>';
@@ -53,13 +53,30 @@ class classBlogC{
         try {
             if (isset($_GET["codDl"])) {
                 $codEliminar = $_GET["codDl"];
-                $entradaEliminada = classBlogM::eliminarEntradaBlog($codEliminar);
+                $entradaEliminada = classBlogM::eliminarEntradaBlogM($codEliminar);
                 if ($entradaEliminada) {
                     echo '<script>window.location="Blog";</script>';
                 } else {
                     echo '<script>console.log("ocurrio un error al eliminar " + ' . $entradaEliminada . ')</script>';
                 }
             }
+        } catch (exception $ex) {
+            mensajes::error($ex);
+        }
+    }
+
+    public static function mostrarEntradaBlogC($valor){
+        try {
+            $cargarEntrada = classBlogM::cargarEntradaBlogM($valor);
+            return $cargarEntrada;
+        } catch (exception $ex) {
+            mensajes::error($ex);
+        }
+    }
+
+    public function actualizarEntradaBlogC(){
+        try {
+            
         } catch (exception $ex) {
             mensajes::error($ex);
         }

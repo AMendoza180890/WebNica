@@ -27,13 +27,11 @@
                     </thead>
                     <tbody>
                         <?php
-
                         $mostrarListaEntrada = new classBlogC();
                         $mostrarListaEntrada->mostrarListaBlogC();
-                        /*
+
                         $valor = null;
-                        CatServicioGralC::CargarServicioC($valor);
-                        */
+                        classBlogC::mostrarEntradaBlogC($valor);
                         ?>
                     </tbody>
                 </table>
@@ -113,6 +111,11 @@
                         <div class="form-group">
                             <h2>Descripcion:</h2>
                             <textarea id="catBlogDescripcionE" name="catBlogDescripcionE" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <h2>Orden:</h2>
+                            <input type="text" class="orm-control input-lg" id="catBlogOrdenE" name="catBlogOrdenE" require>
                         </div>
 
                         <div class="form-group">

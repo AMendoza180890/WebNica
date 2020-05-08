@@ -14,7 +14,6 @@
 
         public static function insertarEntradaBlog($datos){
             try {
-                echo '<script>console.log("'.var_dump($datos).'");</script>';
                 if (!empty($datos)) {
                     $cn = new ConexionBD;
                     $pdo = $cn->cBD()->prepare("INSERT INTO catblog (CatBlogTitulo, CatBlogImg, CatBlogDescripcion, CatBlogFecha, Orden) VALUES (:CatBlogTitulo, :CatBlogImg, :CatBlogDescripcion, :CatBlogFecha, :Orden)");
@@ -33,10 +32,27 @@
             } catch (exception $ex) {
                 mensajes::error($ex);
             }
-           
         }
 
-        public static function eliminarEntradaBlog($codEliminar){
+        public static function cargarEntradaBlogM($codEntrada){
+            try {
+                if ($codEntrada !== NULL && !empty($codEntrada)) {
+                $cn = new ConexionBD;
+                //$sql = str_replace("?", $codEntrada, "SELECT id, CatBlogTitulo, CatBlogImg, CatBlogDescripcion, CatBlogFecha, Orden  FROM catblog WHERE id = ?");
+                //echo '<script>console.log('.$sql.');</script>';
+                $pdo = $cn->cBD()->prepare("SELECT id, CatBlogTitulo, CatBlogImg, CatBlogDescripcion, CatBlogFecha, Orden  FROM catblog WHERE id = :id");
+                $pdo->bindParam(":id", $codEntrada, PDO::PARAM_INT);
+                $pdo->execute();
+                return $pdo->fetch();
+                }else {
+                    classBlogM::cargarListaEntradasM();
+                }
+            } catch (exception $ex) {
+                mensajes::error($ex);
+            }
+        }
+
+        public static function eliminarEntradaBlogM($codEliminar){
             try {
                 $cn = new ConexionBD;
                 $pdo = $cn->cBD()->prepare("DELETE FROM catblog WHERE id = :id");
