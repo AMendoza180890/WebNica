@@ -23,7 +23,7 @@
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-align-left"></i>
+                <a href="Blog"><i class="fa fa-align-left"></i>
                     <span>Blog</span></a>
             </li>
 

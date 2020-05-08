@@ -6,7 +6,7 @@ class mensajesC{
             foreach ($lista_mensajes as $key => $value) {
                 echo '<tr>
                 <td>' . $value["catclicontid"].'</td>
-                <td>' . $value["catclicontName"] . '</td>
+                <td>' . utf8_decode($value["catclicontName"]) . '</td>
                 <td>' . $value["catclicontEmail"] . '</td>';
                 echo '<td>
                         <div class="btn-group">

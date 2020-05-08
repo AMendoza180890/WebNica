@@ -19,10 +19,10 @@
             dataType: "json",
             success: function(mensaje_obtenido) {
                 $("#idE").val(mensaje_obtenido["catclicontid"]);
-                $("#nombreE").val(mensaje_obtenido["catclicontName"]);
+                $("#nombreE").val(decodeURIComponent(escape(mensaje_obtenido["catclicontName"])));
                 $("#emailE").val(mensaje_obtenido["catclicontEmail"]);
-                $("#direccionE").val(mensaje_obtenido["catclicontAdress"]);
-                $("#descripcionE").val(mensaje_obtenido["catclicontMessage"]);
+                $("#direccionE").val(decodeURIComponent(escape(mensaje_obtenido["catclicontAdress"])));
+                $("#descripcionE").val(decodeURIComponent(escape(mensaje_obtenido["catclicontMessage"])));
             }
         })
     })

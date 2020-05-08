@@ -4,7 +4,7 @@ $(".TB").on("click", ".EditarSlide", function() {
     var datos = new FormData();
     datos.append("Sid", Sid);
 
-    debugger
+    //debugger
 
     $.ajax({
         url: "Ajax/slideA.php",

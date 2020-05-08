@@ -11,7 +11,7 @@ class servicioC{
                 }
             echo '<hr>
                 <h2>Descripcion:</h2>
-                <h4>'.$respuesta["HOSDescripcion"].'</h4>';
+                <h4>'.utf8_decode($respuesta["HOSDescripcion"]).'</h4>';
         } catch (exception $ex) {
             mensajes::error($ex);
         }
@@ -42,7 +42,7 @@ class servicioC{
                     </div>
                         <div class="form-group">
                             <h2>Descripcion</h2>
-                            <textarea class="form-control" name="descripcionE" required>'.$respuesta["HOSDescripcion"].'</textarea>
+                            <textarea class="form-control" name="descripcionE" required>'.utf8_decode($respuesta["HOSDescripcion"]).'</textarea>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ class servicioC{
                     }
                     $ImgFile = EditImg::imgEditarServicio("imagenE");
                 }
-                    $datosC = array('imagen' => $ImgFile, 'description' => $_POST["descripcionE"], 'id' => $_POST["Nid"]);
+                    $datosC = array('imagen' => $ImgFile, 'description' => utf8_encode($_POST["descripcionE"]), 'id' => $_POST["Nid"]);
                     $respuesta = servicioM::EditarEncServicioM($datosC);
                     
                     if ($respuesta) {

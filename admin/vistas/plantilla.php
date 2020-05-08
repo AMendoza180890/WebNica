@@ -47,7 +47,7 @@
         include 'vistas/modulos/header.php';
         include 'vistas/modulos/menu.php';
         if (isset($_GET["ruta"])) {
-            if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "ingreso" || $_GET["ruta"] == "salir" || $_GET["ruta"] == "usuarios" || $_GET["ruta"] == "perfil" || $_GET["ruta"] == "slide" || $_GET["ruta"] == "nosotros" || $_GET["ruta"] == "mensajes" || $_GET["ruta"] == "Servicios") {
+            if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "ingreso" || $_GET["ruta"] == "salir" || $_GET["ruta"] == "usuarios" || $_GET["ruta"] == "perfil" || $_GET["ruta"] == "slide" || $_GET["ruta"] == "nosotros" || $_GET["ruta"] == "mensajes" || $_GET["ruta"] == "Servicios" || $_GET["ruta"] == "Blog") {
                 include 'vistas/modulos/' . $_GET["ruta"] . '.php';
             }
         } else {
@@ -102,6 +102,8 @@
     <script src="vistas/js/Servicios.js"></script>
     <!--modulo de mensajes-->
     <script src="vistas/js/mensajes.js"></script>
+    <!--gestion de blog-->
+    <script src="vistas/js/blog.js"></script>
 </body>
 
 </html>

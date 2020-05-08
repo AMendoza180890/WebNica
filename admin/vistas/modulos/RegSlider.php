@@ -32,7 +32,7 @@
                         <div class="form-group">
                             <h2>Imagen:</h2>
                             <input type="file" name="imagenN">
-                            <p class="help-block">peso maximo permitido 200 MB</p>
+                            <p class="help-block">peso máximo permitido 200 MB</p>
                         </div>
                     </div>
                 </div>
