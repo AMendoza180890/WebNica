@@ -18,9 +18,12 @@ $(".TB").on("click", ".actualizarEntrada", function() {
         processData: false,
         dataType: "json",
         success: function(EntradaBlog) {
+            $("#catBlogCodE").val(EntradaBlog["id"]);
             $("#catBlogTituloE").val(decodeURIComponent(escape(EntradaBlog["CatBlogTitulo"])));
             $("#catBlogDescripcionE").val(decodeURIComponent(escape(EntradaBlog["CatBlogDescripcion"])));
             $("#catBlogOrdenE").val(EntradaBlog["Orden"]);
+            $(".visor").attr("src", EntradaBlog["CatBlogImg"]);
+            $("#catBlogCurrentImgE").val(EntradaBlog["CatBlogImg"]);
         }
     })
 })

@@ -33,7 +33,7 @@ class classBlogC{
                     $Datos = array('CatBlogTitulo'=> utf8_encode($_POST["catBlogTituloN"]),'CatBlogImg'=> $catBlogImgProcesado, 'CatBlogDescripcion'=> utf8_encode($_POST["catBlogDescripcionN"]), 'CatBlogFecha'=> $fecha, 'Orden' => $_POST["catBlogOrdenN"] );
                     $entradaIngresado = classBlogM::insertarEntradaBlog($Datos);
                 } else {
-                    $catBlogImgSinProcesar = "vistas/img/usuarios/defecto.png";
+                    $catBlogImgSinProcesar = "vistas/img/usuarios/default.png";
                     $fecha = date("Y-m-d H:i:s");
                     $Datos = array('CatBlogTitulo'=> utf8_encode($_POST["catBlogTituloN"]),'CatBlogImg'=> $catBlogImgSinProcesar , 'CatBlogDescripcion'=> utf8_encode($_POST["catBlogDescripcionN"]), 'CatBlogFecha'=> $fecha, 'Orden' => $_POST["catBlogOrdenN"] );
                     $entradaIngresado = classBlogM::insertarEntradaBlog($Datos);
@@ -76,7 +76,25 @@ class classBlogC{
 
     public function actualizarEntradaBlogC(){
         try {
-            
+            if (isset($_POST["catBlogTituloE"])) {
+                $imagenPostBlog = $_POST["catBlogCurrentImgE"];
+               if (isset($_FILES["catBlogImgE"]["tmp_name"]) && !empty($_FILES["catBlogImgE"]["tmp_name"])) {
+                    if (isset($_POST["catBlogCurrentImgE"]) && !empty($_POST["catBlogCurrentImgE"])) {
+                            unlink($_POST["catBlogCurrentImgE"]);
+                    }
+                        if ($_FILES["catBlogImgE"]) {
+                            $imagenPostBlog = EditImg::imgEditarBlog("catBlogImgE");
+                        }
+               }
+                $fecha = date("Y-m-d H:i:s");
+                $Datos = array('id'=>$_POST["catBlogCodE"],'CatBlogTitulo' => utf8_encode($_POST["catBlogTituloE"]), 'CatBlogImg' => $imagenPostBlog, 'CatBlogDescripcion' => utf8_encode($_POST["catBlogDescripcionE"]), 'CatBlogFecha' => $fecha, 'Orden' => $_POST["catBlogOrdenE"]);
+                $actualizarEntradaBlog = classBlogM::actualizarEntradaBlogM($Datos);
+                if ($actualizarEntradaBlog) {
+                    echo '<script>window.location="Blog";</script>';
+                }else {
+                    echo 'Ocurrio un error, Intente luego';
+                }
+            }
         } catch (exception $ex) {
             mensajes::error($ex);
         }

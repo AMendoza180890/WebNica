@@ -106,6 +106,7 @@
                         <div class="form-group">
                             <h2>Titulo:</h2>
                             <input type="text" class="form-control input-lg" id="catBlogTituloE" name="catBlogTituloE">
+                            <input type="hidden" name="catBlogCodE" id="catBlogCodE">
                         </div>
 
                         <div class="form-group">
@@ -123,7 +124,7 @@
                             <input type="file" id="catBlogImgE" name="catBlogImgE" require>
                             <p class="help-block">peso máximo permitido 200 MB</p>
                             <img src="vistas/img/usuarios/default.png" class="img-thumbnail visor" width="200px;" alt="Imagen a mostrar">
-                            <input type="hidden" name="imagenActual" id="imagenActual">
+                            <input type="hidden" name="catBlogCurrentImgE" id="catBlogCurrentImgE">
                         </div>
 
                     </div>
@@ -133,10 +134,8 @@
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
                 </div>
                 <?php
-                /*
-                $ActualiarCatServicio = new CatServicioGralC();
-                $ActualiarCatServicio->ActualizarCatServicioC();
-                */
+                $actualizarEntrada = new classBlogC();
+                $actualizarEntrada->actualizarEntradaBlogC();
                 ?>
             </form>
         </div>

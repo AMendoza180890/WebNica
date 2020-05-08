@@ -66,5 +66,26 @@
                 mensajes::error($ex);
             }
         }
+
+        public static function actualizarEntradaBlogM($Datos){
+            try {
+                    $cn = new ConexionBD;
+                    $pdo = $cn->cBD()->prepare("UPDATE catblog SET CatBlogTitulo = :CatBlogTitulo, CatBlogImg = :CatBlogImg, CatBlogDescripcion = :CatBlogDescripcion, CatBlogFecha = :CatBlogFecha, Orden = :Orden WHERE id = :id");
+                    $pdo    ->  bindParam(":id",                    $Datos["id"],                           PDO::PARAM_INT);
+                    $pdo    ->  bindParam(":CatBlogTitulo",         $Datos["CatBlogTitulo"],                PDO::PARAM_STR);
+                    $pdo    ->  bindParam(":CatBlogImg",            $Datos["CatBlogImg"],                   PDO::PARAM_STR);
+                    $pdo    ->  bindParam(":CatBlogDescripcion",    $Datos["CatBlogDescripcion"],           PDO::PARAM_STR);
+                    $pdo    ->  bindParam(":CatBlogFecha",          $Datos["CatBlogFecha"],                 PDO::PARAM_STR);
+                    $pdo    ->  bindParam(":Orden",                 $Datos["Orden"],                        PDO::PARAM_INT);
+                    
+                    if  ($pdo    ->  execute()){
+                        return true;
+                    }else {
+                        return false;
+                    }
+            } catch (exception $ex) {
+                mensajes::error($ex);
+            }
+        }
     }
 ?>
