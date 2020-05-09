@@ -54,6 +54,10 @@
     <script src="vistas/js/jquery.superslides.js"></script>
     <script type="text/javascript" src="vistas/js/main.41beeca9.js"></script>
     <script src="vistas/js/smooth-scroll.polyfills.js"></script>
+    <!--Trabajo de acortar descripcion-->
+    <script src="vistas/js/jquery.expander.js"></script>
+    <!--arhvivo script personalizado -->
+    <script src="vistas/js/blogExpand.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>

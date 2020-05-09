@@ -1,4 +1,5 @@
   <!-- Add your site or app content here -->
+  <!--
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -65,8 +66,13 @@
       </div>
     </div>
   </div>
+    -->
 
-
+    <?php 
+      $listarCatBlog = new classBlogViewC;
+      $listarCatBlog -> listarCatBlogC();
+    ?>
+<!--
   <div class="section-container background-color-container white-text-container">
     <div class="container">
       <div class="row">
@@ -102,7 +108,6 @@
                 </p>
               </li>
             </ol>
-
           </div>
         </div>
       </div>
@@ -112,7 +117,6 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-
         <div class="template-example">
           <h2 class="template-title">La publicidad ahora está en redes sociales </h2>
           <p>
@@ -151,3 +155,4 @@
       </div>
     </div>
   </div>
+-->
