@@ -15,6 +15,7 @@ require_once 'controladores/ServiciosC.php';
 require_once 'controladores/CatServiciosC.php';
 require_once 'controladores/CatMensajesC.php';
 require_once 'controladores/catblogC.php';
+require_once 'controladores/tratamientoTexto.php';
 
 require_once 'modelo/EmpListM.php';
 require_once 'modelo/UsuarioCrearM.php';

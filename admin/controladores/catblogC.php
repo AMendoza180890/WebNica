@@ -7,9 +7,12 @@ class classBlogC{
                 echo '<tr>
                             <td>'.$value['id'].'</td>
                             <td>'. utf8_decode($value['CatBlogTitulo']).'</td>
-                            <td><img src="'. $value['CatBlogImg'].'" alt="imagen a mostrar" width="100px"></td>
-                            <td>'. utf8_decode($value['CatBlogDescripcion']).'</td>
-                            <td>'.$value['CatBlogFecha'].'</td>
+                            <td><img src="'. $value['CatBlogImg'].'" alt="imagen a mostrar" width="100px"></td>';
+                            
+                            //$textoModificado = tratamientoTxt::cutString($value['CatBlogDescripcion']);
+                                echo '<td>' . utf8_decode($value['CatBlogDescripcion']) . '</td>';
+                            
+                echo        '<td>'.$value['CatBlogFecha'].'</td>
                             <th>'.$value['Orden'].'</th>
                             <td>
                                 <div class="btn btn-group">
