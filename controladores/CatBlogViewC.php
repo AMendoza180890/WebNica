@@ -24,7 +24,7 @@ class classBlogViewC{
     }
 
     private static function estrucPagina($Value, $color,$claseTexto,$key,$iconos){
-        echo '<div class="section-container '.$color.' '.$claseTexto.'" id="'.$key.'">
+                echo '<div class="section-container '.$color.' '.$claseTexto.'" id="'.$key.'">
                     <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
@@ -32,9 +32,9 @@ class classBlogViewC{
                             <h2 class="text-center">'.utf8_decode($Value["CatBlogTitulo"]). '</h2>
                             <img src="admin/'.$Value["CatBlogImg"]. '" alt="Imagen encabezado" class="img-responsive">
                             <p class="expandable text-left" >'.utf8_decode($Value["CatBlogDescripcion"]). '</p>
-                            <div class = "btn btn-group">
+                            <!--<div class = "btn btn-group">
                                     <p>
-                                        <a href="https://www.facebook.com/Web-nica-110732237194625" class="social-round-icon fa-icon" title="">
+                                        <a href="facebook.com" class="social-round-icon fa-icon" title="">
                                             <i class="fa fa-facebook" aria-hidden="true"></i>
                                         </a>
                                         <a href="https://instagram.com/web_nica/" class="social-round-icon '.$iconos.' fa-icon" title="">
@@ -44,12 +44,13 @@ class classBlogViewC{
                                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                                         </a>
                                     </p>
-                            </div>
+                            </div>-->
                         </div>
                         </div>
                     </div>
                     </div>
                 </div>';
+                //<a href="http://www.facebook.com/sharer.php?s=100&p[url]=https://web-nica.com/index.php?ruta=components#'.$key.'&p[title]='. utf8_decode($Value["CatBlogTitulo"]).'&p[summary]='.utf8_decode($Value["CatBlogTitulo"]) . '&p[images][0]=admin/' . $Value["CatBlogImg"] . '" class="social-round-icon fa-icon" title="">
     }
 }
 ?>
