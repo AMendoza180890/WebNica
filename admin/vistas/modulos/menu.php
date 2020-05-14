@@ -38,8 +38,8 @@
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-address-card"></i>
-                    <span>Suscriptores</span></a>
+                <a href="media"><i class="fa fa-address-card"></i>
+                    <span>Media</span></a>
             </li>
 
             <li>
