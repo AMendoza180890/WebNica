@@ -79,8 +79,6 @@
  </div>
 
  <?php
- 
     $BorrarCatMedia = new clsCatMediaC();
     $BorrarCatMedia->eliminarCatMediaC();
-
 ?>

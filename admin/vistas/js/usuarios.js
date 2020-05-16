@@ -1,8 +1,10 @@
 //borrar usuarios
 $(".TB").on("click", ".BorrarU", function() {
-    var CatUsuId = $(this).attr("CatUsuId");
-    var CatUsuFoto = $(this).attr("CatUsuFoto");
-    window.location = "index.php?ruta=usuarios&CatUsuId=" + CatUsuId + "&CatUsuFoto=" + CatUsuFoto;
+    if (confirm("confirmar para eliminar usuario")) {
+        var CatUsuId = $(this).attr("CatUsuId");
+        var CatUsuFoto = $(this).attr("CatUsuFoto");
+        window.location = "index.php?ruta=usuarios&CatUsuId=" + CatUsuId + "&CatUsuFoto=" + CatUsuFoto;
+    }
 })
 
 //llamar datos para actualizar

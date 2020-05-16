@@ -34,7 +34,9 @@ $(".TB").on("click", ".EditarSlide", function() {
 
 //Borrar Slide
 $(".TB").on("click", ".BorrarSlide", function() {
-    var Sid = $(this).attr("Sid");
-    var imagenSlide = $(this).attr("imagenSlide");
-    window.location = 'index.php?ruta=slide&Sid=' + Sid + '&imagenSlide=' + imagenSlide;
+    if (confirm("Confirmar para eliminar Slide")) {
+        var Sid = $(this).attr("Sid");
+        var imagenSlide = $(this).attr("imagenSlide");
+        window.location = 'index.php?ruta=slide&Sid=' + Sid + '&imagenSlide=' + imagenSlide;
+    }
 })

@@ -26,6 +26,8 @@ $(".EditarServicio").on("click", function() {
 
 // borrar Servicios de la base de datos
 $(".TB").on("click", ".BorrarServicios", function() {
-    var Cod = $(this).attr("ServId");
-    window.location = "index.php?ruta=Servicios&ServId=" + Cod;
+    if (confirm("Confirmar para eliminar servicio")) {
+        var Cod = $(this).attr("ServId");
+        window.location = "index.php?ruta=Servicios&ServId=" + Cod;
+    }
 })

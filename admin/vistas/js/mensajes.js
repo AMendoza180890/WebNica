@@ -1,7 +1,9 @@
     //Borrar mensaje
     $(".TB").on("click", ".btndelmsg", function() {
-            var IdBorrar = $(this).attr("idErs");
-            window.location = "index.php?ruta=mensajes&id=" + IdBorrar;
+            if (confirm("confirmar para eliminar mensaje")) {
+                var IdBorrar = $(this).attr("idErs");
+                window.location = "index.php?ruta=mensajes&id=" + IdBorrar;
+            }
         })
         // mostrar correo completo
     $(".TB").on("click", ".btnEditmsg", function() {
