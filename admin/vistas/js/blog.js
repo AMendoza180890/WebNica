@@ -8,7 +8,6 @@ $(".eliminarEntrada").on("click", function() {
 $(".TB").on("click", ".actualizarEntrada", function() {
     var updtCod = $(this).attr("updtCod");
     var entradas = new FormData();
-
     entradas.append("updtCod", updtCod);
 
     $.ajax({

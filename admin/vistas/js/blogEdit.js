@@ -1,0 +1,3 @@
+$(".actualizarEntradaBlog").on("click", function() {
+
+})

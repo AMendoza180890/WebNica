@@ -8,15 +8,13 @@ class classBlogC{
                             <td>'.$value['id'].'</td>
                             <td>'. utf8_decode($value['CatBlogTitulo']).'</td>
                             <td><img src="'. $value['CatBlogImg'].'" alt="imagen a mostrar" width="100px"></td>';
-                            
                             //$textoModificado = tratamientoTxt::cutString($value['CatBlogDescripcion']);
                                 echo '<td>' . utf8_decode($value['CatBlogDescripcion']) . '</td>';
-                            
                 echo        '<td>'.$value['CatBlogFecha'].'</td>
                             <th>'.$value['Orden'].'</th>
                             <td>
                                 <div class="btn btn-group">
-                                    <button class="btn btn-success actualizarEntrada" updtCod="'.$value['id']. '"><i class="fa fa-pencil" data-toggle="modal" data-target="#editarEntrada"></i></button>
+                                    <button class="btn btn-success actualizarEntrada" updtCod="'.$value['id'].'"><i class="fa fa-pencil" data-toggle="modal" data-target="#editarEntrada"></i></button>
                                     <button class="btn btn-danger eliminarEntrada" blgidCln="'.$value['id'].'"><i class="fa fa-times"></i></button>
                                 </div>
                             </td>

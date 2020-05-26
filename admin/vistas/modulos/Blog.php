@@ -91,7 +91,6 @@
     </div>
 </div>
 
-
 <!--Actualizar entrada del blog-->
 <div class="modal fade" role="dialog" id="editarEntrada">
     <div class="modal-dialog">
@@ -131,6 +130,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="submit" class="btn btn-secondary" style="display:none;" data-toggle="modal" data-target="#ver_media">Add Multimedia</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
                 </div>
                 <?php
@@ -140,7 +140,9 @@
             </form>
         </div>
     </div>
-</div>
+</div> 
+<?php include 'vistas/modulos/loadMedia.php'; ?>
+
 <?php
 $borrarEntrada = new classBlogC();
 $borrarEntrada->eliminarEntradaBlogC();
