@@ -2,12 +2,17 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
         <ul class="sidebar-menu">
-            <li>
+            <?php
+                $menuLoad = new rolesMenuC;
+                $menuLoad->CatRolesMenuC($_SESSION["CatRol"]);
+            ?>
+
+            <!-- <li>
                 <a href="inicio"><i class="fa fa-home"></i>
                     <span>Inicio</span></a>
-            </li>
+            </li> -->
 
-            <li>
+            <!-- <li>
                 <a href="slide"><i class="fa fa-image"></i>
                     <span>Slide</span></a>
             </li>
@@ -45,7 +50,7 @@
             <li>
                 <a href="usuarios"><i class="fa fa-user"></i>
                     <span>Usuarios</span></a>
-            </li>
+            </li> -->
         </ul>
     </section>
     <!-- /.sidebar -->

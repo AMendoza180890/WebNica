@@ -14,6 +14,7 @@
                             $_SESSION["CatPass"] = $respuesta["CatPass"];
                             $_SESSION["CatUsuFoto"] = $respuesta["CatUsuFoto"];
                             $_SESSION["CatRol"] = $respuesta["CatRol"];
+
                             echo '<script> 
                                     window.location = "index.php?url=inicio";
                                 </script>';

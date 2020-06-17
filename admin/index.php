@@ -1,5 +1,4 @@
 <?php
-
 require_once 'controladores/plantillac.php';
 require_once 'controladores/usuarioC.php';
 require_once 'controladores/usuarioListC.php';
@@ -18,6 +17,7 @@ require_once 'controladores/catblogC.php';
 require_once 'controladores/tratamientoTexto.php';
 require_once 'controladores/catMediaC.php';
 require_once 'controladores/CatmultimediaC.php';
+require_once 'controladores/catrolesMenuC.php';
 
 require_once 'modelo/EmpListM.php';
 require_once 'modelo/UsuarioCrearM.php';
@@ -33,6 +33,7 @@ require_once 'modelo/CatMensajesM.php';
 require_once 'modelo/catblogM.php';
 require_once 'modelo/catMediaM.php';
 require_once 'modelo/catmultimediaM.php';
+require_once 'modelo/catrolesMenuM.php';
 
 $plantilla = new plantillas();
 $plantilla ->callplantilla();
