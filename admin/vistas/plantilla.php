@@ -47,7 +47,7 @@
         include 'vistas/modulos/header.php';
         include 'vistas/modulos/menu.php';
         if (isset($_GET["ruta"])) {
-            if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "ingreso" || $_GET["ruta"] == "salir" || $_GET["ruta"] == "usuarios" || $_GET["ruta"] == "perfil" || $_GET["ruta"] == "slide" || $_GET["ruta"] == "nosotros" || $_GET["ruta"] == "mensajes" || $_GET["ruta"] == "Servicios" || $_GET["ruta"] == "Blog" || $_GET["ruta"]=="media") {
+            if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "ingreso" || $_GET["ruta"] == "salir" || $_GET["ruta"] == "usuarios" || $_GET["ruta"] == "perfil" || $_GET["ruta"] == "slide" || $_GET["ruta"] == "nosotros" || $_GET["ruta"] == "mensajes" || $_GET["ruta"] == "Servicios" || $_GET["ruta"] == "Blog" || $_GET["ruta"]=="media" || $_GET["ruta"] == 'CatMenuRolesControl') {
                 include 'vistas/modulos/' . $_GET["ruta"] . '.php';
             }
         } else {
@@ -106,6 +106,8 @@
     <script src="vistas/js/blog.js"></script>
     <!--multimedia-->
     <script src="vistas/js/media.js"></script>
+    <!--roles-->
+    <script src="vistas/js/roles.js"></script>
 </body>
 
 </html>
