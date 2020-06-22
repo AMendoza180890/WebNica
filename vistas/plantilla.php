@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -15,17 +15,11 @@
         gtag('config', 'UA-159948149-1');
     </script>
     <!-- End google Analytics-->
-    <!--Meta datos para facebook-->
-    <meta property="og:url" content="https://www.web-nica.com/index.php?ruta=components" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Web-Nica.com" />
-    <meta property="og:description" content="Extiende tu negocio por todo el mundo con web-nica" />
-    <meta property="og:image" content="https://www.web-nica.com/admin/vistas/img/blog/B138.jpg" />
     <!--start metas to page website-->
     <meta charset="UTF-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <meta content="description" name="description" />
+    <meta content="Desarrollo de páginas web y marketing digital" name="description" />
     <meta name="google" content="notranslate" />
     <meta content="Website developed by Web-Nica" name="author" />
     <!-- Disable tap highlight on IE -->

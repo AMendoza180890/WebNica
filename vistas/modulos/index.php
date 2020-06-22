@@ -168,7 +168,7 @@
             <!--bloques de valores-->
             <div class="col-md-5">
                 <ul class="features">
-                    <li>
+                    <!-- <li>
                         <p>
                         </p>
                     </li>
@@ -186,7 +186,7 @@
                             amet consectetur adipiscing.
                         </p>
                     </li>
-                </ul>
+                </ul> -->
             </div>
 
             <div class="row">

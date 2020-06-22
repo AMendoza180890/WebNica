@@ -27,8 +27,8 @@
                         <thead>
                             <tr>
                                 <th>N</th>
-                                <th>Control</th>
                                 <th>Icono</th>
+                                <th>Control</th>
                                 <th>Permisos</th>
                                 <!--<th>aplicar</th>-->
                             </tr>
@@ -36,8 +36,8 @@
                         foreach ($listaMenu as $key => $value) {
                                 echo '<tbody>
                                         <th>'.$value['CatMenuId'].'</th>
-                                        <th id="TagMenu">'.$value['CatMenuTag'].'</th>
                                         <th><i class="'.$value['CatMenuIcon']. '"></i></th>
+                                        <th id="TagMenu">'.$value['CatMenuTag'].'</th>
                                         <th>
                                             <select name="estadoN" id="' . $value["CatMenuId"] . '" idMenu="'. $value['CatMenuId']. '">
                                                 <option value="1" ' . (($value["CatEstCod"] == "1") ? 'selected= "selected"' : "") .'>Habilitado </option>
